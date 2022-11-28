@@ -1,5 +1,12 @@
 .app__footer {
+  border: 1px solid black;
   padding: 1rem 2rem;
+}
+
+.app__footer-socials {
+  border: 1px solid black;
+  padding: 2rem;
+  height: 15vh;
 }
 
 .app__footer-social-links {
@@ -11,6 +18,14 @@
   text-decoration: none;
 
   li {
-    padding: 1rem;
+    margin: 1rem;
   }
+}
+
+.app__footer-credits {
+  border: 1px solid red;
+  height: 5vh;
+
+  text-align: center;
+  padding: 1rem;
 }
