@@ -2,9 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 import { Navbar } from "./components";
-import { About, Header } from "./container";
-// import Header from "./container/Header/Header";
-import Footer from "./container/Footer/Footer";
+import { About, Header, Footer} from "./container";
 
 function App() {
   return (
