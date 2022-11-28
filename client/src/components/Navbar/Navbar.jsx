@@ -5,7 +5,7 @@ import "./Navbar.scss";
 export default function Navbar() {
   return (
     <nav className="app__navbar">
-      <ul>
+      <ul className="app__navbar-links">
         {["home", "about", "work"].map((item) => (
           <li key={`link-${item}`}>
             <a href={`#${item}`}>{item}</a>
