@@ -1,0 +1,16 @@
+.app__footer {
+  padding: 1rem 2rem;
+}
+
+.app__footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+  text-decoration: none;
+
+  li {
+    padding: 1rem;
+  }
+}
