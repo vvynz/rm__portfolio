@@ -2,16 +2,31 @@ import React from "react";
 
 import "./Footer.scss";
 
+const socials = [
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/rkive/",
+  },
+  {
+    name: "Spotify",
+    link: "https://open.spotify.com/artist/2auC28zjQyVTsiZKNgPRGs?si=onau8lOzR_2irJh7zRpABA&nd=1",
+  },
+  {
+    name: "Youtube",
+    link: "",
+  },
+];
+
 export default function Footer() {
   return (
     <>
       <div className="app__footer">
         <div className="app__footer-socials">
           <ul className="app__footer-social-links">
-            {["Instagram", "Twitter", "Spotify", "Youtube"].map((item) => (
-              <li key={item}>
-                <a href="/" target="_blank">
-                  <img src="/" alt={item} />
+            {socials.map((item) => (
+              <li key={item.name}>
+                <a href={item.link} target="_blank">
+                  <img src="/" alt={item.name} />
                 </a>
               </li>
             ))}
