@@ -9,3 +9,16 @@
   // background-color: #000;
   color: var(--bg-light);
 }
+
+.app_header-news {
+  position: relative;
+  width: 100%;
+  bottom: 130px;
+
+  p {
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--bg-light);
+    text-align: center;
+  }
+}
