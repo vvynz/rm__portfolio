@@ -1,19 +1,24 @@
 import React from "react";
 
+import { images } from "../../constants";
+
 import "./Footer.scss";
 
 const socials = [
   {
     name: "Instagram",
     link: "https://www.instagram.com/rkive/",
+    icon: `${images.instagram}`
   },
   {
     name: "Spotify",
     link: "https://open.spotify.com/artist/2auC28zjQyVTsiZKNgPRGs?si=onau8lOzR_2irJh7zRpABA&nd=1",
+    icon: `${images.spotify}`
   },
   {
     name: "Youtube",
     link: "https://www.youtube.com/@HYBELABELS",
+    icon: `${images.youtube}`
   },
 ];
 
@@ -26,7 +31,7 @@ export default function Footer() {
             {socials.map((item) => (
               <li key={item.name}>
                 <a href={item.link} target="_blank">
-                  <img src="/" alt={item.name} />
+                  <img src={item.icon} alt={item.name} />
                 </a>
               </li>
             ))}
