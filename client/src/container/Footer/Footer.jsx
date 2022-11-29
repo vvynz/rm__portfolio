@@ -13,7 +13,7 @@ const socials = [
   },
   {
     name: "Youtube",
-    link: "",
+    link: "https://www.youtube.com/@HYBELABELS",
   },
 ];
 
