@@ -1,4 +1,5 @@
 import React from "react";
+import SVGInject from "@iconfu/svg-inject";
 
 import { images } from "../../constants";
 
@@ -8,17 +9,17 @@ const socials = [
   {
     name: "Instagram",
     link: "https://www.instagram.com/rkive/",
-    icon: `${images.instagram}`
+    icon: `${images.instagram}`,
   },
   {
     name: "Spotify",
     link: "https://open.spotify.com/artist/2auC28zjQyVTsiZKNgPRGs?si=onau8lOzR_2irJh7zRpABA&nd=1",
-    icon: `${images.spotify}`
+    icon: `${images.spotify}`,
   },
   {
     name: "Youtube",
     link: "https://www.youtube.com/@HYBELABELS",
-    icon: `${images.youtube}`
+    icon: `${images.youtube}`,
   },
 ];
 
@@ -31,7 +32,12 @@ export default function Footer() {
             {socials.map((item) => (
               <li key={item.name}>
                 <a href={item.link} target="_blank">
-                  <img src={item.icon} alt={item.name} />
+                  <img
+                    className="social__icons"
+                    src={item.icon}
+                    alt={item.name}
+                    onLoad={(e) => SVGInject(e.target)}
+                  />
                 </a>
               </li>
             ))}
