@@ -15,16 +15,15 @@
   align-items: center;
 
   list-style: none;
-  text-decoration: none;
 
   li {
     margin: 1rem;
 
     svg {
-      width: 50px;
-      height: 50px;
-      // color: var(--bg-light);
-      fill: var(--bg-light);
+      width: 20px;
+      height: 20px;
+      // fill: var(--bg-light);
+      fill: var(--dark-color);
     }
   }
 }
