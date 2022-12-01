@@ -8,7 +8,7 @@ export default function Release() {
   return (
     <>
       <h3>Release section</h3>
-      <EmbededVideo />
+      <EmbededVideo videoID="fYiDCh-GYoE" />
     </>
   );
 }
