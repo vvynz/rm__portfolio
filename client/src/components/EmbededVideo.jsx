@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./EmbededVideo.scss";
+
 export default function EmbededVideo({ videoID }) {
   return (
-    <div>
+    <div className="video__wrapper">
       <iframe
         width={640}
         height={360}
