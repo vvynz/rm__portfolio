@@ -2,14 +2,15 @@ import { useState } from "react";
 import "./App.scss";
 
 import { Navbar } from "./components";
-import { About, Header, Footer} from "./container";
+import { About, Header, Release, Footer} from "./container";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <About />
       <Header />
+      <Release />
+      {/* <About /> */}
       <Footer />
     </div>
   );
