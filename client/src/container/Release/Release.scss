@@ -1,0 +1,17 @@
+.app__release {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 20px;
+    margin-bottom: 1em;
+  }
+}
+
+.app__release-title {
+  margin-bottom: 1rem;
+  font-weight: 800;
+}

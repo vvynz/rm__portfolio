@@ -6,9 +6,10 @@ import "./Release.scss";
 
 export default function Release() {
   return (
-    <>
-      <h3>Release section</h3>
+    <section className="app__release">
+      <h1 className="app__release-title">Latest Release</h1>
+      <p>"Wild Flower" Official Teaser - Out Now</p>
       <EmbededVideo videoID="fYiDCh-GYoE" />
-    </>
+    </section>
   );
 }
