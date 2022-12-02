@@ -12,9 +12,9 @@ export default function Header() {
       <img src={images.wildflower} alt="Wild Flower music video" />
       </div>
       <div className="app_header-news">
-        <p>INDIGO OUT DEC 2</p>
+        <p>Indigo out now</p>
         <a className="app__btn" href="https://ingrv.es/Indigo" target="_blank">
-          PRE-ORDER NOW
+          order now
         </a>
       </div>
     </section>
