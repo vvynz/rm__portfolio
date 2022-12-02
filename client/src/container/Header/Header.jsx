@@ -9,7 +9,10 @@ export default function Header() {
     <section className="app__header-container">
       {/* <div className="app__header-img" /> */}
       <div className="app__header-img">
-      <img src={images.wildflower} alt="Wild Flower music video" />
+        <img src={images.wildflower} alt="Wild Flower music video" />
+        <a href="http://" target="_blank">
+          <img src={images.play} alt="play icon" />
+        </a>
       </div>
       <div className="app_header-news">
         <p>Indigo out now</p>
