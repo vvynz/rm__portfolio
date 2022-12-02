@@ -12,7 +12,7 @@ export default function Release() {
       <EmbededVideo videoID="fYiDCh-GYoE" />
 
       <p>INDIGO ALBUM OUT NOW</p>
-      <a href="https://ingrv.es/Indigo" target="_blank">
+      <a className="app__btn" href="https://ingrv.es/Indigo" target="_blank">
         BUY HERE
       </a>
       <EmbededVideo />

@@ -22,16 +22,8 @@
   }
 
   a {
-    text-decoration: none;
-    text-align: center;
-
-    display: block;
-    max-width: 300px;
-    margin: 20px auto;
     background-color: transparent;
     border: 1px solid var(--light-color);
-    padding: 10px 75px;
-    transition: all 0.3s ease-in-out 0s;
   }
 
   a:visited {

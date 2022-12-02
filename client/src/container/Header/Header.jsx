@@ -10,7 +10,7 @@ export default function Header() {
       <div className="app__header-img" />
       <div className="app_header-news">
         <p>INDIGO OUT DEC 2</p>
-        <a href="https://ingrv.es/Indigo" target="_blank">
+        <a className="app__btn" href="https://ingrv.es/Indigo" target="_blank">
           PRE-ORDER NOW
         </a>
       </div>

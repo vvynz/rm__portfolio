@@ -4,3 +4,14 @@
   color: var(--dark-color);
   min-height: 100vh;
 }
+
+.app__btn {
+  text-decoration: none;
+  text-align: center;
+
+  display: block;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 10px 75px;
+  transition: all 0.3s ease-in-out 0s;
+}

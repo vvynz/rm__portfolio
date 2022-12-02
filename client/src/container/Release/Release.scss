@@ -8,6 +8,21 @@
   p {
     font-size: 20px;
   }
+
+  a {
+    border: 1px solid var(--dark-color);
+    background-color: transparent;
+  }
+
+  a:visited {
+    color: var(--dark-color);
+  }
+
+  a:hover {
+    cursor: pointer;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+  }
 }
 
 .app__release-title {
