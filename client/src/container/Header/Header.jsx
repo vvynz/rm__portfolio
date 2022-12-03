@@ -1,4 +1,5 @@
 import React from "react";
+import SVGInject from "@iconfu/svg-inject";
 
 import { images } from "../../constants";
 
@@ -9,9 +10,9 @@ export default function Header() {
     <section className="app__header-container">
       {/* <div className="app__header-img" /> */}
       <div className="app__header-img">
-        <img src={images.wildflower} alt="Wild Flower music video" />
-        <a href="http://" target="_blank">
-          <img src={images.play} alt="play icon" />
+        <img className="header__img" src={images.wildflower} alt="Wild Flower music video" />
+        <a href="https://www.youtube.com/watch?v=u18be_kRmC0" target="_blank">
+          <img className="app__icon" src={images.play} alt="play icon" onLoad={(e) => SVGInject(e.target)} />
         </a>
       </div>
       <div className="app_header-news">
