@@ -31,6 +31,12 @@ const articles = [
     title: "RM OF BTS IS EMBRACING THE SILENCE",
     link: "https://www.theatlantic.com/culture/archive/2022/12/rm-bts-indigo-album/672307/"
   },
+  {
+    id: 6,
+    title: "'It Documents My Growth as an Artist and a Person': RM on Creativity, Collaboration, and His First Solo Album",
+    link: "https://www.vogue.com/article/rm-bts-indigo-interview",
+    excerpt: "“Indigo still explores my emotions and learnings through my experiences.” The shift toward a more intimate kind of storytelling is something he hopes will resonate with listeners. “It’s more open in a way people can easily relate to”"
+  }
 ]
 export default function News() {
   return (
