@@ -1,10 +1,12 @@
 .app__news-container {
   text-align: center;
 
-  h1 {
+  .app__news-container-title {
     border-bottom: 1px solid var(--dark-color);
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto;
+    text-align: center;
     max-width: 25%;
+    font-size: 3rem;
   }
 }
