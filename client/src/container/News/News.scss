@@ -1,0 +1,10 @@
+.app__news-container {
+  text-align: center;
+
+  h1 {
+    border-bottom: 1px solid var(--dark-color);
+    display: block;
+    margin: 0 auto;
+    max-width: 25%;
+  }
+}
