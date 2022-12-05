@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.scss";
 
 import { Navbar } from "./components";
-import { About, Header, Release, Footer} from "./container";
+import { About, Header, Release, News, Footer} from "./container";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Header />
       <Release />
       {/* <About /> */}
+      <News />
       <Footer />
     </div>
   );
