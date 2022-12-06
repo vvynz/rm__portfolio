@@ -12,7 +12,7 @@ export default function Navbar() {
         {/* <small>just an archive</small> */}
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work"].map((item) => (
+        {["home", "about", "work", "news"].map((item) => (
           <li key={`link-${item}`}>
             <a href={`#${item}`}>{item}</a>
           </li>

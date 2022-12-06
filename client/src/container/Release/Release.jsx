@@ -19,7 +19,7 @@ const releases = [
 
 export default function Release() {
   return (
-    <section className="app__release">
+    <section id="work" className="app__release">
       <h1 className="app__release-title">Latest Release</h1>
       {releases.map((item) => (
         <div key={item.id} className="app__release-item">

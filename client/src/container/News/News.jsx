@@ -40,8 +40,8 @@ const articles = [
 ]
 export default function News() {
   return (
-    <section className="app__news-container">
-      <h1 className="app__news-container-title">The Latest</h1>
+    <section id="news" className="app__news-container">
+      <h1 className="app__news-container-title">News</h1>
       {articles.map((article) => (
         <Article key={article.id} title={article.title} link={article.link} excerpt={article.excerpt} />
       ))}
