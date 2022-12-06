@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.scss";
 
-import { Navbar } from "./components";
-import { About, Header, Release, News, Footer} from "./container";
+import { Navbar, ScrollToTop } from "./components";
+import { About, Header, Release, News, Footer } from "./container";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       {/* <About /> */}
       <News />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
