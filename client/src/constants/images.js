@@ -5,6 +5,7 @@ import youtube from "../assets/youtube.svg";
 import indigoHeader from "../assets/indigo_header.jpeg";
 import wildflower from "../assets/wildflower.gif";
 import play from "../assets/play.svg";
+import up from "../assets/up-arrow.png";
 
 export default {
   indigoHeader,
@@ -14,4 +15,5 @@ export default {
   youtube,
   wildflower,
   play,
+  up
 };
