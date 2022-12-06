@@ -22,7 +22,7 @@ export default function Release() {
     <section className="app__release">
       <h1 className="app__release-title">Latest Release</h1>
       {releases.map((item) => (
-        <div key={item.id}>
+        <div key={item.id} className="app__release-item">
           <p>{item.title}</p>
           <EmbededVideo videoID={item.videoID} />
         </div>
