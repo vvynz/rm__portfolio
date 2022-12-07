@@ -33,8 +33,8 @@ export default function ScrollToTop() {
   return (
     <>
       {isVisible && (
-        <button onClick={scrollToTop}>
-          <img className="up-icon" src={images.up} />
+        <button className="up-btn" onClick={scrollToTop}>
+          <img src={images.up} />
         </button>
       )}
     </>

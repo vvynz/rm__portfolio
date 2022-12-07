@@ -1,4 +1,15 @@
-.up-icon {
-  height: 50px;
-  width: 50px;
+.up-btn {
+  position: fixed;
+  bottom: 0;
+  right: 10rem;
+
+  background-color: transparent;
+  border: 1px solid var(--dark-color);
+  border-radius: 10px;
+  padding: 0.5rem;
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
 }
