@@ -1,15 +1,17 @@
 .up-btn {
   position: fixed;
   bottom: 0;
-  right: 10rem;
+  right: 7rem;
 
   background-color: transparent;
   border: 1px solid var(--dark-color);
-  border-radius: 10px;
-  padding: 0.5rem;
+  border-radius: 50%;
+  padding: 1.2em;
+  margin-bottom: 10px;
+  cursor: pointer;
 
   img {
-    height: 50px;
-    width: 50px;
+    height: 20px;
+    width: 20px;
   }
 }
