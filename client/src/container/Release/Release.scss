@@ -15,19 +15,20 @@
     text-align: center;
   }
 
-  a {
+  .app__btn {
     border: 1px solid var(--dark-color);
     background-color: transparent;
-  }
 
-  a:visited {
-    color: var(--dark-color);
-  }
+    &:visited {
+      color: var(--dark-color);
+    }
 
-  a:hover {
-    cursor: pointer;
-    background-color: var(--dark-color);
-    color: var(--light-color);
+    &:hover {
+      cursor: pointer;
+      background-color: var(--blue-color);
+      opacity: 0.9;
+      color: var(--light-color);
+    }
   }
 }
 

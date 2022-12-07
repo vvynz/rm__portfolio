@@ -52,19 +52,20 @@
       text-align: center;
     }
 
-    a {
+    .app__btn {
       background-color: transparent;
       border: 1px solid var(--dark-color);
-    }
 
-    a:visited {
-      color: var(--dark-color);
-    }
-
-    a:hover {
-      cursor: pointer;
-      background-color: var(--dark-color);
-      color: var(--light-color);
+      &:visited {
+        color: var(--dark-color);
+      }
+  
+      &:hover {
+        cursor: pointer;
+        background-color: var(--blue-color);
+        opacity: 0.9;
+        color: var(--light-color);
+      }
     }
   }
 }

@@ -12,10 +12,10 @@
 
   a {
     text-decoration: none;
-  }
 
-  a:visited {
-    color: var(--dark-color);
+    &:visited {
+      color: var(--dark-color);
+    }
   }
  
   h1 {
