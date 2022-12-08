@@ -15,6 +15,9 @@ export default function Header() {
           <img className="app__icon" src={images.play} alt="play icon" onLoad={(e) => SVGInject(e.target)} />
         </a>
       </div>
+      {/* <div className="app__header-img">
+        <img className="header" src={images.indigoBanner} alt="Indigo banner" />
+      </div> */}
       <div className="app_header-news">
         <p>Indigo out now</p>
         <a className="app__btn" href="https://ingrv.es/Indigo" target="_blank">
