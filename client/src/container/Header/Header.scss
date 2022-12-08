@@ -13,7 +13,7 @@
     // background-repeat: no-repeat;
     // background-position: center center;
     // background-color: #000;
-    color: var(--light-color);
+    // color: var(--light-color);
 
     text-align: center;
     height: 100vh;
@@ -21,6 +21,22 @@
     .header__img {
       height: 70vh;
       margin: 2.5em auto;
+    }
+
+    .header-caption {
+      display: flex;
+      justify-content: center;
+      // text-align: center;
+    }
+
+    p {
+      position: absolute;
+      // left: 33%;
+      bottom: 28%;
+
+      // color: var(--light-color);
+      font-family: 'Water Brush', cursive;
+      font-size: 10rem;
     }
 
     a:hover {

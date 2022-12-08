@@ -10,10 +10,22 @@ export default function Header() {
     <section className="app__header-container">
       {/* <div className="app__header-img" /> */}
       <div className="app__header-img">
-        <img className="header__img" src={images.wildflower} alt="Wild Flower music video" />
+        <img
+          className="header__img"
+          src={images.wildflower}
+          alt="Wild Flower music video"
+        />
         <a href="https://www.youtube.com/watch?v=u18be_kRmC0" target="_blank">
-          <img className="app__icon" src={images.play} alt="play icon" onLoad={(e) => SVGInject(e.target)} />
+          <img
+            className="app__icon"
+            src={images.play}
+            alt="play icon"
+            onLoad={(e) => SVGInject(e.target)}
+          />
         </a>
+        <div className="header-caption">
+          <p>wildflower</p>
+        </div>
       </div>
       {/* <div className="app__header-img">
         <img className="header" src={images.indigoBanner} alt="Indigo banner" />
