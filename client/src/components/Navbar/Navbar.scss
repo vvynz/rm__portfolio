@@ -19,6 +19,9 @@
   justify-content: flex-start;
   align-items: baseline;
 
+  img {
+    filter: invert(60%);
+  }
   
   p {
     font-size: 35px;

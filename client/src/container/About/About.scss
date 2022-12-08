@@ -1,0 +1,17 @@
+.app__about {
+  // border: 1px solid #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  margin: 1rem auto;
+  max-width: 750px;
+  height: 50vh;
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+}
