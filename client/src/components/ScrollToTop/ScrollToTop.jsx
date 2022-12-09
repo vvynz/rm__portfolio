@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 import "./ScrollToTop.scss";
 
@@ -31,12 +32,18 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <>
+    <AnimatePresence>
       {isVisible && (
-        <button className="up-btn" onClick={scrollToTop}>
+        <motion.button
+          className="up-btn"
+          onClick={scrollToTop}
+          initial={{ y: 300, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          eyit={{ y:0, opacity: 0 }}
+        >
           <img src={images.up} />
-        </button>
+        </motion.button>
       )}
-    </>
+    </AnimatePresence>
   );
 }
