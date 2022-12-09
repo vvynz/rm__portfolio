@@ -38,8 +38,10 @@ export default function ScrollToTop() {
           className="up-btn"
           onClick={scrollToTop}
           initial={{ y: 300, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          eyit={{ y:0, opacity: 0 }}
+          animate={{ y: 0, opacity: 1, transition: { duration: 0.7 } }}
+          exit={{ y: 300, opacity: 0, transition: { duration: 0.7 } }}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 1 }}
         >
           <img src={images.up} />
         </motion.button>
