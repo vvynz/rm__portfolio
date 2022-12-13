@@ -1,6 +1,6 @@
 export default {
-  name: "reviews",
-  title: "Reviews",
+  name: "news",
+  title: "News",
   type: "document",
   fields: [
     {
@@ -9,18 +9,13 @@ export default {
       type: "string"
     },
     {
-      name: "company",
-      title: "Company",
-      type: "string"
-    },
-    {
       name: "articleLink",
       title: "Article Link",
       type: "string"
     },
     {
-      name: "review",
-      title: "Review",
+      name: "excerpt",
+      title: "Excerpt",
       type: "string"
     },
   ]
