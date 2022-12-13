@@ -61,7 +61,7 @@ export default function News() {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500
+          delay: 4000
         }}
         pagination={{
           clickable: true,
@@ -73,7 +73,9 @@ export default function News() {
         onSlideChange={() => console.log('slide change')}
       >
         {articles.map((article) => (
-          <SwiperSlide key={article.id}>
+          <SwiperSlide 
+          className="swiperSlide"
+          key={article.id}>
             <Article
               key={article.id}
               title={article.title}
