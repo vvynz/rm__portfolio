@@ -12,7 +12,7 @@ export default function Carousel() {
   return (
     <>
       <Swiper>
-        <h2>Swiper</h2>
+        <SwiperSlide></SwiperSlide>
       </Swiper>
     </>
   );
