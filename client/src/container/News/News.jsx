@@ -61,7 +61,8 @@ export default function News() {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 4000
+          delay: 5000,
+          disableOnInteraction: false
         }}
         pagination={{
           clickable: true,
@@ -70,7 +71,6 @@ export default function News() {
         scrollbar={{
           draggable: true
         }}
-        onSlideChange={() => console.log('slide change')}
       >
         {articles.map((article) => (
           <SwiperSlide 
