@@ -1,16 +1,8 @@
 import React from "react";
-// import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import required Swiper modules
-import { Autoplay, Pagination, Navigation } from "swiper";
-
-import "swiper/scss";
-import "swiper/scss/pagination";
-import "swiper/scss/navigation";
 
 import "./News.scss";
 
-import { Article } from "../../components";
+import { Article, Carousel } from "../../components";
 
 const articles = [
   {
@@ -56,6 +48,7 @@ export default function News() {
   return (
     <section id="news" className="app__news-container">
       <h1 className="app__news-container-title">News</h1>
+      <Carousel />
       {articles.map((article) => (
         <Article
           key={article.id}
