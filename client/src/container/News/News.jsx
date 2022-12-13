@@ -11,6 +11,7 @@ import "swiper/scss/navigation";
 import "./News.scss";
 
 import { Article, Carousel } from "../../components";
+import { urlFor, client } from "../../../client";
 
 const articles = [
   {
