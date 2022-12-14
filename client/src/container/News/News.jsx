@@ -21,7 +21,7 @@ export default function News() {
 
     client.fetch(query).then((data) => setArticles(data));
   }, []);
-  console.log(articles);
+  // console.log(articles);
 
   return (
     <section id="news" className="app__news-container">

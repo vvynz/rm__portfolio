@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { EmbededVideo } from "../../components";
+import { client } from "../../../client";
 
 import "./Release.scss";
 
@@ -18,6 +19,8 @@ const releases = [
 ];
 
 export default function Release() {
+  const [videos, setVideos] = useState([]);
+  
   return (
     <section id="work" className="app__release">
       <h1 className="app__release-title">Latest Release</h1>
