@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import required Swiper modules
@@ -54,6 +54,15 @@ const articles = [
   },
 ];
 export default function News() {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    const query = "*[_type == 'articles']";
+
+    client.fetch(query).then((data) => setArticles(data));
+  }, []);
+  console.log(articles);
+
   return (
     <section id="news" className="app__news-container">
       <h1 className="app__news-container-title">News</h1>
@@ -63,22 +72,20 @@ export default function News() {
         centeredSlides={true}
         autoplay={{
           delay: 5000,
-          disableOnInteraction: false
+          disableOnInteraction: false,
         }}
         pagination={{
           clickable: true,
         }}
         navigation
         scrollbar={{
-          draggable: true
+          draggable: true,
         }}
       >
-        {articles.map((article) => (
-          <SwiperSlide 
-          className="swiperSlide"
-          key={article.id}>
+        {articles.map((article, index) => (
+          <SwiperSlide className="swiperSlide" key={index}>
             <Article
-              key={article.id}
+              key={index}
               title={article.title}
               link={article.link}
               excerpt={article.excerpt}
