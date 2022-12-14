@@ -20,7 +20,14 @@ const releases = [
 
 export default function Release() {
   const [videos, setVideos] = useState([]);
-  
+
+  useEffect(() => {
+    const query = "*[_type == 'videos']";
+
+    client.fetch(query).then((data) => setVideos(data));
+  }, []);
+  console.log(videos);
+
   return (
     <section id="work" className="app__release">
       <h1 className="app__release-title">Latest Release</h1>
