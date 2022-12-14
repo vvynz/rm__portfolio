@@ -5,19 +5,6 @@ import { client } from "../../../client";
 
 import "./Release.scss";
 
-const releases = [
-  {
-    id: 1,
-    title: '"Wild Flower (with youjeen)" Official MV - Out Now',
-    videoID: "u18be_kRmC0",
-  },
-  {
-    id: "2",
-    title: '"Still Life (with Anderson .Paak)" Official MV - Out Now',
-    videoID: "2vfmL4q2koo",
-  },
-];
-
 export default function Release() {
   const [videos, setVideos] = useState([]);
 
@@ -26,15 +13,15 @@ export default function Release() {
 
     client.fetch(query).then((data) => setVideos(data));
   }, []);
-  console.log(videos);
+  // console.log(videos);
 
   return (
     <section id="work" className="app__release">
       <h1 className="app__release-title">Latest Release</h1>
-      {releases.map((item) => (
-        <div key={item.id} className="app__release-item">
-          <p>{item.title}</p>
-          <EmbededVideo videoID={item.videoID} />
+      {videos.map((video, index) => (
+        <div key={index} className="app__release-item">
+          <p>{video.title}</p>
+          <EmbededVideo videoID={video.videoID} />
         </div>
       ))}
 
