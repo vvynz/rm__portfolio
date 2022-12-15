@@ -13,16 +13,16 @@ export default function Release() {
 
     client.fetch(query).then((data) => setVideos(data));
   }, []);
-  console.log(videos);
+  // console.log(videos);
 
   return (
     <section id="work" className="app__release">
       <h1 className="app__release-title">Latest Release</h1>
       {videos
         .sort((v1, v2) =>
-          v1["_createdAt"] > v2["_createdAt"]
+          v1["_createdAt"] < v2["_createdAt"]
             ? 1
-            : v1["_createdAt"] < v2["_createdAt"]
+            : v1["_createdAt"] > v2["_createdAt"]
             ? -1
             : 0
         )
