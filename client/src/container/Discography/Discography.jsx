@@ -18,13 +18,14 @@ export default function Discography() {
     <section className="app__discography">
       <h1>DISCOGRAPHY</h1>
       {discography.map((item, index) => (
-        <div key={index}>
+        <div key={index} className="app__discography-album">
           <h2>{item.title}</h2>
-          <img src={urlFor(item.albumImg)} alt={item.albumImg.caption} />
+          <img className="discography__album-img" src={urlFor(item.albumImg)} alt={item.albumImg.caption} />
+          <p>Tracklist:</p>
           <ul>
-            {item.details.split(",").map((track) => 
-            <li>{track}</li>
-            )}
+            {item.tracklist.split(",").map((track, index) => (
+              <li key={index}>{track}</li>
+            ))}
           </ul>
         </div>
       ))}

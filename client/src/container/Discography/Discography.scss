@@ -1,0 +1,25 @@
+.app__discography-album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    padding-top: 1em;
+  }
+
+  p {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.discography__album-img {
+  width: 30em;
+  height: 30em;
+  padding: 1rem 0;
+}
