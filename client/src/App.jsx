@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.scss";
 
 import { Navbar, ScrollToTop } from "./components";
-import { About, Header, Release, News, Footer } from "./container";
+import { About, Header, Release, News, Footer, Discography } from "./container";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <About />
       <Release />
       <News />
+      <Discography />
       <Footer />
       <ScrollToTop />
     </div>
