@@ -1,6 +1,6 @@
 export default {
-name: "about",
-title: "About",
-type: "text",
-
-}
+  title: "About",
+  name: "about",
+  type: "text",
+  description: "Enter a short description about yourself or your latest work"
+};

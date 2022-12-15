@@ -1,7 +1,7 @@
 export default {
-  name: discography,
-  title: Discography,
-  type: document,
+  name: "discography",
+  title: "Discography",
+  type: "document",
   fields: [
     {
       name: "title",
