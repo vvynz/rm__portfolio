@@ -1,4 +1,4 @@
-export default discography = {
+export default {
   name: discography,
   title: Discography,
   type: document,

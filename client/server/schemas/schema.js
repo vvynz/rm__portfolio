@@ -6,6 +6,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import articles from './articles'
 import videos from './videos'
 import discography from './discography';
+import about from './about';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -14,6 +15,7 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
+    about,
     articles,
     discography,
     videos
