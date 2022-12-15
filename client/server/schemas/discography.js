@@ -5,13 +5,25 @@ export default {
   fields: [
     {
       name: "title",
-      title: "",
+      title: "Album title",
       type: "string"
     },
     {
       name: "albumImg",
       title: "Album image",
-      type: "string"
+      type: "image",
+      fields: [
+        {
+          name: 'caption',
+          title: "Caption",
+          type: "string"
+        },
+        {
+         name: "attribution",
+         title: "Attribution",
+         type: "string"
+        }
+      ]
     },
     {
       name: "details",
