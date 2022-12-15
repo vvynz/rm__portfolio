@@ -26,8 +26,8 @@ export default {
       ]
     },
     {
-      name: "details",
-      title: "Details",
+      name: "tracklist",
+      title: "Track list",
       type: "string"
     },
   ]
