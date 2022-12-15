@@ -6,10 +6,17 @@ import { client } from "../../../client";
 
 export default function About() {
   const [about, setAbout] = useState([]);
-  
+
+  useEffect(() => {
+    const query = "*[_type == 'about']";
+
+    client.fetch(query).then((data) => setAbout(data));
+  }, [])
+  console.log(about[0].about.split("."))
+
   return (
     <section className="app__about">
-      <p>
+      {/* <p>
         RM of 21st century pop icons BTS, released a new solo album, Indigo on
         Dec 2.
       </p>
@@ -24,7 +31,11 @@ export default function About() {
         youjeen)." RM led the overall album making from writing the songs and
         lyrics, developing the concept of the album, designing album art to
         develop the music video.
-      </p>
+      </p> */}
+
+      {about.map((item, index) => 
+        <p key={index}>{item.about}</p>
+      )}
     </section>
   );
 }
