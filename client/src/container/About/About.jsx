@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "./About.scss";
 
+import { client } from "../../../client";
+
 export default function About() {
+  const [about, setAbout] = useState([]);
+  
   return (
     <section className="app__about">
       <p>
@@ -17,8 +21,7 @@ export default function About() {
       <p>
         The album comprises of 10 tracks in various genres and with several
         featured artists, including hte lead single "Wild Flower (with
-        youjeen)." 
-        RM led the overall album making from writing the songs and
+        youjeen)." RM led the overall album making from writing the songs and
         lyrics, developing the concept of the album, designing album art to
         develop the music video.
       </p>
