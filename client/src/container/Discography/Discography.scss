@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-evenly;
 
-  // xs screens max-width: 400px
-  @media screen and (max-width: 25em) {
+  // sm screens max-width: 512px
+  @media screen and (max-width: 32em) {
     display: flex;
     flex-direction: column;
     justify-content: center;
