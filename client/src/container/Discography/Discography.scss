@@ -1,8 +1,9 @@
 .app__discography-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
-  @media screen and (max-width: 375px) {
+  // xs screens max-width: 400px
+  @media screen and (max-width: 25em) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +24,8 @@
     font-size: 1.5rem;
     font-weight: 700;
 
-    @media screen and (max-width: 375px) {
+    // xs screens max-width: 400px
+    @media screen and (max-width: 25em) {
       font-size: 1rem;
     }
   }
@@ -38,8 +40,15 @@
   height: 25em;
   padding: 1rem 0;
 
-  @media screen and (max-width: 375px) {
-      width: 10em;
-      height: 10em;
+  // xs screens max-width: 400px
+  // @media screen and (max-width: 25em) {
+  //   width: 10em;
+  //   height: 10em;
+  // }
+
+  // sm screens max-width: 640px
+  @media screen and (max-width: 40em) {
+    width: 15em;
+    height: 15em;
   }
 }
