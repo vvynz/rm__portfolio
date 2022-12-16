@@ -1,3 +1,14 @@
+.app__discography-wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .app__discography-album {
   display: flex;
   flex-direction: column;
@@ -11,6 +22,10 @@
     padding-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
+
+    @media screen and (max-width: 375px) {
+      font-size: 1rem;
+    }
   }
 
   li {
@@ -19,7 +34,12 @@
 }
 
 .discography__album-img {
-  width: 30em;
-  height: 30em;
+  width: 25em;
+  height: 25em;
   padding: 1rem 0;
+
+  @media screen and (max-width: 375px) {
+      width: 10em;
+      height: 10em;
+  }
 }
