@@ -17,7 +17,6 @@ import "./Header.scss";
 export default function Header() {
   return (
     <section className="app__header-container">
-      {/* <div className="app__header-img" /> */}
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         centeredSlides={true}

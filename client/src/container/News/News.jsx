@@ -10,7 +10,7 @@ import "swiper/scss/navigation";
 
 import "./News.scss";
 
-import { Article, Carousel } from "../../components";
+import { Article } from "../../components";
 import { urlFor, client } from "../../../client";
 
 export default function News() {
