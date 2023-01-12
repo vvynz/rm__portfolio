@@ -3,6 +3,13 @@ import SVGInject from "@iconfu/svg-inject";
 
 import { images } from "../../constants";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper React components
+import { Autoplay, Pagination, Navigation } from "swiper";
+// Import required Swiper modules
+
+
+
 import "./Header.scss";
 
 export default function Header() {
