@@ -75,6 +75,19 @@ export default function Header() {
             </a>
           </div>
         </SwiperSlide>
+        <SwiperSlide>
+          <div className="app__header-img"></div>
+          <div className="app_header-news">
+            <p>Pre-orders for Indigo Vinyl Live Now!</p>
+            <a
+              className="app__btn"
+              href="https://ingrv.es/indigovinyl"
+              target="_blank"
+            >
+              order now
+            </a>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </section>
   );
