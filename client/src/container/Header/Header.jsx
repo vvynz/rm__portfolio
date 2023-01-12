@@ -22,7 +22,7 @@ export default function Header() {
         modules={[Autoplay, Pagination, Navigation]}
         centeredSlides={true}
         autoplay={{
-          delay: 5000,
+          delay: 10000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -76,7 +76,13 @@ export default function Header() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="app__header-img"></div>
+          <div className="app__header-img">
+            <img
+              className="header__img"
+              src={images.indigoLP}
+              alt="Indigo LP cover image"
+            />
+          </div>
           <div className="app_header-news">
             <p>Pre-orders for Indigo Vinyl Live Now!</p>
             <a
