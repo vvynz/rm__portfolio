@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { EmbededVideo } from "../../components";
 import { client } from "../../../client";
 
-import "./Release.scss";
+import "./MediaReleases.scss";
 
 export default function Release() {
   const [videos, setVideos] = useState([]);
