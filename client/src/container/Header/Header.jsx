@@ -36,6 +36,15 @@ export default function Header() {
         <SwiperSlide>
           <div className="app__header-img">
             <img
+              className="header__banner"
+              src={images.indigoBanner}
+              alt="Indigo banner"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="app__header-img">
+            <img
               className="header__img"
               src={images.wildflower}
               alt="Wild Flower music video"
@@ -55,9 +64,6 @@ export default function Header() {
               <p>wildflower</p>
             </div>
           </div>
-          {/* <div className="app__header-img">
-        <img className="header" src={images.indigoBanner} alt="Indigo banner" />
-      </div> */}
           <div className="app_header-news">
             <p>Indigo out now</p>
             <a
