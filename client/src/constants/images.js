@@ -8,13 +8,15 @@ import indigoLP from "../assets/indigo_lp.jpeg";
 import wildflower from "../assets/wildflower.gif";
 import play from "../assets/play.svg";
 import up from "../assets/up-arrow.png";
+import leftArrow from "../assets/left-arrow.png";
 
 export default {
   indigoHeader,
   indigoBanner,
   indigoLP,
-  logo,
   instagram,
+  leftArrow,
+  logo,
   spotify,
   youtube,
   wildflower,
