@@ -27,6 +27,9 @@ export default function Navbar() {
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}
+        <li>
+          <Link to="discography">Discography</Link>
+        </li>
       </ul>
     </nav>
   );
