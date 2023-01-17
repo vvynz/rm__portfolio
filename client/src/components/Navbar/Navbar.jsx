@@ -1,10 +1,6 @@
-//
+//Dependencies
 import React from "react";
 import { Link } from "react-router-dom";
-
-// Components
-import App from "../../App";
-import { Discography } from "../../container";
 
 // Images & Stylesheets
 import { images } from "../../constants";
@@ -20,7 +16,7 @@ export default function Navbar() {
       </div>
       <ul className="app__navbar-links">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">home</Link>
         </li>
         {["about", "news"].map((item) => (
           <li key={`link-${item}`}>
@@ -28,7 +24,7 @@ export default function Navbar() {
           </li>
         ))}
         <li>
-          <Link to="discography">Discography</Link>
+          <Link to="discography">discography</Link>
         </li>
       </ul>
     </nav>
