@@ -15,7 +15,7 @@ export default function About() {
   // console.log(about);
 
   return (
-    <section className="app__about">
+    <section id="about" className="app__about">
       {about.map((i, index) => (
         <>
           <p key={index}>{i.about.split(". ")[0]}.</p>
