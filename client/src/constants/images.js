@@ -2,7 +2,7 @@ import logo from "../assets/rm_logo.png";
 import instagram from "../assets/instagram.svg";
 import spotify from "../assets/spotify.svg";
 import youtube from "../assets/youtube.svg";
-import indigoHeader from "../assets/indigo_header.jpeg";
+import indigoHeader from "../assets/indigo_header.png";
 import indigoBanner from "../assets/indigo_banner.png";
 import indigoLP from "../assets/indigo_lp.jpeg";
 import wildflower from "../assets/wildflower.gif";
