@@ -20,8 +20,7 @@ export default function Discography() {
   return (
     <section className="app__discography">
       <Link to="/" className="nav-link">
-        <img src={images.up} />
-        Back to Home
+        <img src={images.leftArrow} />
       </Link>
       <h1>DISCOGRAPHY</h1>
       <div className="app__discography-wrapper">
