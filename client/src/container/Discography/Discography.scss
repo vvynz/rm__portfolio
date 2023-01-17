@@ -1,6 +1,29 @@
+.app__discography {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  min-height: 100vh;
+
+  .nav-link {
+    display: flex;
+    align-items: baseline;
+
+    img {
+      width: 20px;
+      transform: rotate(-90deg);
+    }
+  }
+
+  h1 {
+    font-size: 2.25em;
+    text-align: center;
+    padding: 1em 0;
+  }
+}
+
 .app__discography-wrapper {
   display: flex;
   justify-content: space-evenly;
+  padding: 1em 1em 1.5em 1em;
 
   // sm screens max-width: 512px
   @media screen and (max-width: 32em) {

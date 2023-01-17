@@ -1,8 +1,11 @@
+// Dependencies
 import React, { useState, useEffect } from "react";
-
-import "./Discography.scss";
-
 import { client, urlFor } from "../../../client";
+import { Link } from "react-router-dom";
+
+// Images & Stylesheets
+import { images } from "../../constants";
+import "./Discography.scss";
 
 export default function Discography() {
   const [discography, setDiscography] = useState([]);
@@ -16,6 +19,10 @@ export default function Discography() {
 
   return (
     <section className="app__discography">
+      <Link to="/" className="nav-link">
+        <img src={images.up} />
+        Back to Home
+      </Link>
       <h1>DISCOGRAPHY</h1>
       <div className="app__discography-wrapper">
         {discography.map((item, index) => (
