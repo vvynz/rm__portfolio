@@ -36,7 +36,7 @@ export default function Header() {
           <div className="app__header-img">
             <img
               className="header__banner"
-              src={images.indigoBanner}
+              src={images.indigoHeader}
               alt="Indigo banner"
             />
           </div>
