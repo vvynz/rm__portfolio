@@ -14,7 +14,9 @@
     img {
       width: 1.5rem;
       height: 1.5rem;
-      filter: invert(40%);
+      // filter: invert(40%); 
+      // color is = val(--blue-color)
+      filter: invert(29%) sepia(98%) saturate(509%) hue-rotate(162deg) brightness(95%) contrast(91%)
     }
   }
 

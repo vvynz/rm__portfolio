@@ -3,10 +3,6 @@
   "project": {
     "name": "rm_portfolio"
   },
-  "api": {
-    "projectId": "${import.meta.env.PROD.VITE_SANITY_STUDIO_PROJECT_ID}",
-    "dataset": "production"
-  },
   "plugins": [
     "@sanity/base",
     "@sanity/default-layout",
