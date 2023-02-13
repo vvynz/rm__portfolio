@@ -1,9 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { useInView } from "framer-motion";
 
 import { EmbededVideo } from "../../components";
 import { client } from "../../../client";
 
 import "./MediaReleases.scss";
+
+function Section({ children }) {
+  
+}
 
 export default function Release() {
   const [videos, setVideos] = useState([]);
