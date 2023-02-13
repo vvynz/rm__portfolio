@@ -17,7 +17,8 @@
   --dark-color: rgba(52, 55, 62, 0.8);
   --light-color: #edf2f8;
   --bg-dark: #242424;
-  --blue-color: rgb(25, 103, 151);
+  --indigo-color: rgb(25, 103, 151);
+  --blue-color: #195891; 
 }
 
 * {
