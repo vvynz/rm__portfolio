@@ -48,8 +48,10 @@ export default function Release() {
         )
         .map((video, index) => (
           <div key={index} className="app__release-item">
-            <p>{video.title}</p>
-            <EmbededVideo videoID={video.videoID} />
+            <Section>
+              <p>{video.title}</p>
+              <EmbededVideo videoID={video.videoID} />
+            </Section>
           </div>
         ))}
 
