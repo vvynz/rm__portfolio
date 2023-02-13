@@ -1,5 +1,7 @@
 .app__news-container {
+  // border: 1px solid black;
   text-align: center;
+  // height: 80vh;
 
   .app__news-container-title {
     border-bottom: 1px solid var(--dark-color);
@@ -11,6 +13,6 @@
   }
 
   .swiperSlide {
-    min-height: 50vh;
+    min-height: 60vh;
   }
 }
