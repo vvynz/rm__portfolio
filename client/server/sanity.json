@@ -4,7 +4,7 @@
     "name": "rm_portfolio"
   },
   "api": {
-    "projectId": "1gvsuh4l",
+    "projectId": "{import.meta.env.development.SANITY_STUDIO_PROJECT_ID}",
     "dataset": "production"
   },
   "plugins": [
