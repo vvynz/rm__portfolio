@@ -9,27 +9,66 @@ import "./Navbar.scss";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
-    <nav className="app__navbar">
+    <motion.nav
+      className="app__navbar"
+      initial={false}
+      animate={isOpen ? "open" : "closed"}
+    >
       <div className="app__logo">
         <img src={images.logo} alt="logo" />
         {/* <p>rm___</p> */}
         {/* <small>just an archive</small> */}
       </div>
-      <ul className="app__navbar-links">
-        <li>
+
+      <motion.button
+        className="menu-btn"
+        whileTap={{ scale: 0.97 }}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        Menu
+        <motion.div
+          variants={{
+            open: { rotate: 180 },
+            closed: { rotate: 0 },
+          }}
+        >
+          <img src={images.up} />
+        </motion.div>
+      </motion.button>
+      <motion.ul
+        className="app__navbar-links"
+        variants={{
+          clipPath: "inset(0% 0% 0% 0% round 10px)",
+          transition: {
+            type: "spring",
+            bounce: 0,
+            duration: 0.7,
+            delayChildren: 0.3,
+            staggerChildren: 0.05,
+          },
+          closed: {
+            clipPath: "inset(10% 50% 90% 50% round 10px)",
+            transition: "spring",
+            bounce: 0,
+            duration: 0.3,
+          },
+        }}
+        style={{ pointerEvents: isOpen? "auto" : "none"}}
+      >
+        <motion.li>
           <Link to="/">home</Link>
-        </li>
+        </motion.li>
         {["about", "news"].map((item) => (
-          <li key={`link-${item}`}>
+          <motion.li key={`link-${item}`}>
             <a href={`#${item}`}>{item}</a>
-          </li>
+          </motion.li>
         ))}
-        <li>
+        <motion.li>
           <Link to="discography">discography</Link>
-        </li>
-      </ul>
-    </nav>
+        </motion.li>
+      </motion.ul>
+    </motion.nav>
   );
 }

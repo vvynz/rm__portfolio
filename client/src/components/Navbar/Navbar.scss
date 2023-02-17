@@ -43,6 +43,17 @@
   }
 }
 
+.menu-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 7em;
+
+  img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
 .app__navbar-links {
   text-decoration: none;
   list-style: none;
