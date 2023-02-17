@@ -1,12 +1,14 @@
 .app__footer {
   // border: 1px solid black;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
+  background-color: var(--bg-dark);
+  color: var(--light-color);
 }
 
 .app__footer-socials {
   // border: 1px solid black;
-  padding: 2rem;
-  height: 15vh;
+  padding-top: 1rem;
+  height: 10vh;
 }
 
 .app__footer-social-links {
@@ -20,10 +22,10 @@
     margin: 1rem;
 
     svg {
-      width: 20px;
-      height: 20px;
-      // fill: var(--light-color);
-      fill: var(--dark-color);
+      width: 24px;
+      height: 24px;
+      fill: var(--light-color);
+      // fill: var(--dark-color);
     }
   }
 }
@@ -31,7 +33,7 @@
 .app__footer-credits {
   // border: 1px solid red;
   height: 5vh;
-
+  font-size: 1rem;
   text-align: center;
   padding: 1rem;
 }
