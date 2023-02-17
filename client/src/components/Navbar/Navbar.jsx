@@ -7,6 +7,13 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 import "./Navbar.scss";
 
+const variants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 },
+  },
+};
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -55,17 +62,17 @@ export default function Navbar() {
             duration: 0.3,
           },
         }}
-        style={{ pointerEvents: isOpen? "auto" : "none"}}
+        style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
-        <motion.li>
+        <motion.li variants={variants}>
           <Link to="/">home</Link>
         </motion.li>
         {["about", "news"].map((item) => (
-          <motion.li key={`link-${item}`}>
+          <motion.li key={`link-${item}`} variants={variants}>
             <a href={`#${item}`}>{item}</a>
           </motion.li>
         ))}
-        <motion.li>
+        <motion.li variants={variants}>
           <Link to="discography">discography</Link>
         </motion.li>
       </motion.ul>
