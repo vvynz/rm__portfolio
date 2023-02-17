@@ -1,12 +1,15 @@
 //Dependencies
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 // Images & Stylesheets
 import { images } from "../../constants";
 import "./Navbar.scss";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  
   return (
     <nav className="app__navbar">
       <div className="app__logo">
