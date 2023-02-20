@@ -8,10 +8,22 @@ import { images } from "../../constants";
 import "./Navbar.scss";
 
 const variants = {
+  closed: {
+    opacity:0,
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirection: -1,
+    },
+  },
   open: {
     opacity: 1,
-    y: 0,
-    transition: { type: "spring", stiffness: 300, damping: 24 },
+    transition: {
+      // type: "spring",
+      // stiffness: 300,
+      // damping: 24,
+      staggerChildren: 0.2,
+      staggerDirection: 1,
+    },
   },
 };
 export default function Navbar() {
@@ -20,8 +32,12 @@ export default function Navbar() {
   return (
     <motion.nav
       className="app__navbar"
-      initial={false}
-      animate={isOpen ? "open" : "closed"}
+      initial={{
+        height: 0,
+      }}
+      animate={{
+        height: 300,
+      }}
     >
       <div className="app__logo">
         <img src={images.logo} alt="logo" />
@@ -46,25 +62,12 @@ export default function Navbar() {
       </motion.button>
       <motion.ul
         className="app__navbar-links"
-        variants={{
-          clipPath: "inset(0% 0% 0% 0% round 10px)",
-          transition: {
-            type: "spring",
-            bounce: 0,
-            duration: 0.7,
-            delayChildren: 0.3,
-            staggerChildren: 0.05,
-          },
-          closed: {
-            clipPath: "inset(10% 50% 90% 50% round 10px)",
-            transition: "spring",
-            bounce: 0,
-            duration: 0.3,
-          },
-        }}
+        variants={variants}
+        initial={false}
+        animate={isOpen ? "open" : "closed"}
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
-        <motion.li variants={variants}>
+        <motion.li>
           <Link to="/">home</Link>
         </motion.li>
         {["about", "news"].map((item) => (
