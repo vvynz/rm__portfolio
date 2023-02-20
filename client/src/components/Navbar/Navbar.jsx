@@ -45,10 +45,10 @@ export default function Navbar() {
           animate={{
             width: 300,
           }}
-          // exit={{
-          //   width: 0,
-          //   transition: { delay: 0.7, duration: 0.3 },
-          // }}
+          exit={{
+            width: 0,
+            transition: { delay: 0.7, duration: 0.3 },
+          }}
         >
           <motion.button
             className="menu-btn"
@@ -69,14 +69,15 @@ export default function Navbar() {
           <motion.ul
             className="app__navbar-links"
             variants={sideVariants}
-            initial={false}
+            initial="closed"
             animate={isOpen ? "open" : "closed"}
+            exit="closed"
             style={{ pointerEvents: isOpen ? "auto" : "none" }}
           >
             <motion.li
               variants={itemVariants}
               whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              transition={{ type: "spring" }}
             >
               <Link to="/">home</Link>
             </motion.li>
@@ -85,7 +86,7 @@ export default function Navbar() {
                 key={`link-${item}`}
                 variants={itemVariants}
                 whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                transition={{ type: "spring" }}
               >
                 <a href={`#${item}`}>{item}</a>
               </motion.li>
@@ -93,7 +94,7 @@ export default function Navbar() {
             <motion.li
               variants={itemVariants}
               whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              transition={{ type: "spring" }}
             >
               <Link to="discography">discography</Link>
             </motion.li>
