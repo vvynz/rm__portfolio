@@ -1,7 +1,7 @@
 //Dependencies
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useCycle } from "framer-motion";
 
 // Images & Stylesheets
 import { images } from "../../constants";
@@ -28,6 +28,7 @@ const variants = {
 };
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [open, cycleOpen] = useCycle(false, true);
 
   return (
     <motion.nav
@@ -67,7 +68,7 @@ export default function Navbar() {
         animate={isOpen ? "open" : "closed"}
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
-        <motion.li>
+        <motion.li variants={variants}>
           <Link to="/">home</Link>
         </motion.li>
         {["about", "news"].map((item) => (
