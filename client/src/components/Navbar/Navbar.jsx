@@ -1,7 +1,7 @@
 //Dependencies
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion, useCycle } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 // Images & Stylesheets
 import { images } from "../../constants";
@@ -28,7 +28,6 @@ const variants = {
 };
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [open, cycleOpen] = useCycle(false, true);
 
   return (
     <motion.nav className="app__navbar">
@@ -37,50 +36,68 @@ export default function Navbar() {
         {/* <p>rm___</p> */}
         {/* <small>just an archive</small> */}
       </div>
-
-      <motion.aside
-        initial={{
-          width: 0,
-        }}
-        animate={{
-          width: 300,
-        }}
-      >
-        <motion.button
-          className="menu-btn"
-          whileTap={{ scale: 0.97 }}
-          onClick={() => setIsOpen(!isOpen)}
+      <AnimatePresence>
+        <motion.aside
+          initial={{
+            width: 0,
+          }}
+          animate={{
+            width: 300,
+          }}
+          exit={{
+            width: 0,
+            transition: { delay: 0.7, duration: 0.3 },
+          }}
         >
-          Menu
-          <motion.div
-            variants={{
-              open: { rotate: 180 },
-              closed: { rotate: 0 },
-            }}
+          <motion.button
+            className="menu-btn"
+            whileTap={{ scale: 0.97 }}
+            onClick={() => setIsOpen(!isOpen)}
           >
-            <img src={images.up} />
-          </motion.div>
-        </motion.button>
-        <motion.ul
-          className="app__navbar-links"
-          variants={variants}
-          initial={false}
-          animate={isOpen ? "open" : "closed"}
-          style={{ pointerEvents: isOpen ? "auto" : "none" }}
-        >
-          <motion.li variants={variants}>
-            <Link to="/">home</Link>
-          </motion.li>
-          {["about", "news"].map((item) => (
-            <motion.li key={`link-${item}`} variants={variants}>
-              <a href={`#${item}`}>{item}</a>
+            Menu
+            <motion.div
+              variants={{
+                open: { rotate: 180 },
+                closed: { rotate: 0 },
+              }}
+            >
+              <img src={images.up} />
+            </motion.div>
+          </motion.button>
+          <motion.ul
+            className="app__navbar-links"
+            variants={variants}
+            initial={false}
+            animate={isOpen ? "open" : "closed"}
+            style={{ pointerEvents: isOpen ? "auto" : "none" }}
+          >
+            <motion.li
+              variants={variants}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              <Link to="/">home</Link>
             </motion.li>
-          ))}
-          <motion.li variants={variants}>
-            <Link to="discography">discography</Link>
-          </motion.li>
-        </motion.ul>
-      </motion.aside>
+            {["about", "news"].map((item) => (
+              <motion.li
+                key={`link-${item}`}
+                variants={variants}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <a href={`#${item}`}>{item}</a>
+              </motion.li>
+            ))}
+            <motion.li
+              variants={variants}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              <Link to="discography">discography</Link>
+            </motion.li>
+          </motion.ul>
+        </motion.aside>
+      </AnimatePresence>
     </motion.nav>
   );
 }
