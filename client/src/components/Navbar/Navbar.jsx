@@ -46,7 +46,6 @@ export default function Navbar() {
             }}
             animate={{
               width: 300,
-              justifyContent: "flex-end"
             }}
             exit={{
               width: 0,
@@ -60,7 +59,7 @@ export default function Navbar() {
               animate="open"
               // animate={isOpen ? "open" : "closed"}
               exit="closed"
-              // style={{ pointerEvents: isOpen ? "auto" : "none" }}
+              style={{ pointerEvents: isOpen ? "auto" : "none" }}
             >
               <motion.li
                 variants={itemVariants}
