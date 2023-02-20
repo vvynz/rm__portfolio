@@ -7,25 +7,26 @@ import { AnimatePresence, motion } from "framer-motion";
 import { images } from "../../constants";
 import "./Navbar.scss";
 
-const variants = {
+const sideVariants = {
   closed: {
-    opacity: 0,
     transition: {
       staggerChildren: 0.2,
       staggerDirection: -1,
     },
   },
   open: {
-    opacity: 1,
     transition: {
-      // type: "spring",
-      // stiffness: 300,
-      // damping: 24,
       staggerChildren: 0.2,
       staggerDirection: 1,
     },
   },
 };
+
+const itemVariants = {
+  closed: { opacity: 0 },
+  open: { opacity: 1 },
+};
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -44,10 +45,10 @@ export default function Navbar() {
           animate={{
             width: 300,
           }}
-          exit={{
-            width: 0,
-            transition: { delay: 0.7, duration: 0.3 },
-          }}
+          // exit={{
+          //   width: 0,
+          //   transition: { delay: 0.7, duration: 0.3 },
+          // }}
         >
           <motion.button
             className="menu-btn"
@@ -56,6 +57,7 @@ export default function Navbar() {
           >
             Menu
             <motion.div
+              // variants={sideVariants}
               variants={{
                 open: { rotate: 180 },
                 closed: { rotate: 0 },
@@ -66,13 +68,13 @@ export default function Navbar() {
           </motion.button>
           <motion.ul
             className="app__navbar-links"
-            variants={variants}
+            variants={sideVariants}
             initial={false}
             animate={isOpen ? "open" : "closed"}
             style={{ pointerEvents: isOpen ? "auto" : "none" }}
           >
             <motion.li
-              variants={variants}
+              variants={itemVariants}
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
@@ -81,7 +83,7 @@ export default function Navbar() {
             {["about", "news"].map((item) => (
               <motion.li
                 key={`link-${item}`}
-                variants={variants}
+                variants={itemVariants}
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
@@ -89,7 +91,7 @@ export default function Navbar() {
               </motion.li>
             ))}
             <motion.li
-              variants={variants}
+              variants={itemVariants}
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
