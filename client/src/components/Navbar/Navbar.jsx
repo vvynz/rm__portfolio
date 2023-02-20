@@ -38,69 +38,74 @@ export default function Navbar() {
         {/* <small>just an archive</small> */}
       </div>
       <AnimatePresence>
-        <motion.aside
-          initial={{
-            width: 0,
-          }}
-          animate={{
-            width: 300,
-          }}
-          exit={{
-            width: 0,
-            transition: { delay: 0.7, duration: 0.3 },
-          }}
-        >
-          <motion.button
-            className="menu-btn"
-            whileTap={{ scale: 0.97 }}
-            onClick={() => setIsOpen(!isOpen)}
+        {isOpen && (
+          <motion.aside
+            className="app__menu"
+            initial={{
+              width: 0,
+            }}
+            animate={{
+              width: 300,
+              justifyContent: "flex-end"
+            }}
+            exit={{
+              width: 0,
+              transition: { delay: 0.7, duration: 0.3 },
+            }}
           >
-            Menu
-            <motion.div
-              // variants={sideVariants}
-              variants={{
-                open: { rotate: 180 },
-                closed: { rotate: 0 },
-              }}
+            <motion.ul
+              className="app__navbar-links"
+              variants={sideVariants}
+              initial="closed"
+              animate="open"
+              // animate={isOpen ? "open" : "closed"}
+              exit="closed"
+              // style={{ pointerEvents: isOpen ? "auto" : "none" }}
             >
-              <img src={images.up} />
-            </motion.div>
-          </motion.button>
-          <motion.ul
-            className="app__navbar-links"
-            variants={sideVariants}
-            initial="closed"
-            animate={isOpen ? "open" : "closed"}
-            exit="closed"
-            style={{ pointerEvents: isOpen ? "auto" : "none" }}
-          >
-            <motion.li
-              variants={itemVariants}
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring" }}
-            >
-              <Link to="/">home</Link>
-            </motion.li>
-            {["about", "news"].map((item) => (
               <motion.li
-                key={`link-${item}`}
                 variants={itemVariants}
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring" }}
               >
-                <a href={`#${item}`}>{item}</a>
+                <Link to="/">home</Link>
               </motion.li>
-            ))}
-            <motion.li
-              variants={itemVariants}
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring" }}
-            >
-              <Link to="discography">discography</Link>
-            </motion.li>
-          </motion.ul>
-        </motion.aside>
+              {["about", "news"].map((item) => (
+                <motion.li
+                  key={`link-${item}`}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring" }}
+                >
+                  <a href={`#${item}`}>{item}</a>
+                </motion.li>
+              ))}
+              <motion.li
+                variants={itemVariants}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring" }}
+              >
+                <Link to="discography">discography</Link>
+              </motion.li>
+            </motion.ul>
+          </motion.aside>
+        )}
       </AnimatePresence>
+      <motion.button
+        className="menu-btn"
+        whileTap={{ scale: 0.9 }}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        Menu
+        <motion.div variants={sideVariants}>
+          <img
+            src={images.up}
+            variants={{
+              open: { rotate: 180 },
+              closed: { rotate: 0 },
+            }}
+          />
+        </motion.div>
+      </motion.button>
     </motion.nav>
   );
 }

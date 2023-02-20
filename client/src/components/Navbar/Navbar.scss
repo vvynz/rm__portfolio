@@ -22,7 +22,7 @@
   img {
     filter: invert(60%);
   }
-  
+
   p {
     font-size: 35px;
     font-weight: 700;
@@ -44,9 +44,10 @@
 }
 
 .menu-btn {
-  display: flex;
-  justify-content: space-between;
-  width: 7em;
+  border: none;
+  // display: flex;
+  // justify-content: space-between;
+  // width: 7em;
   background-color: transparent;
   color: var(--dark-color);
 
@@ -56,18 +57,22 @@
   }
 }
 
-.app__navbar-links {
-  border: 1px solid black;
-  padding: 1rem;
-  list-style: none;
+.app__menu {
+  width: 18rem;
+  height: 25vh;
 
-  font-size: 1.2rem;
+  .app__navbar-links {
+    // border: 1px solid black;
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.2rem;
 
-  li {
-    padding: 0.5rem;
-  }
+    li {
+      padding: 0.5rem;
+    }
 
-  a {
-    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
   }
 }
