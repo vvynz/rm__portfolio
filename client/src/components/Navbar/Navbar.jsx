@@ -9,7 +9,7 @@ import "./Navbar.scss";
 
 const variants = {
   closed: {
-    opacity:0,
+    opacity: 0,
     transition: {
       staggerChildren: 0.2,
       staggerDirection: -1,
@@ -31,55 +31,56 @@ export default function Navbar() {
   const [open, cycleOpen] = useCycle(false, true);
 
   return (
-    <motion.nav
-      className="app__navbar"
-      initial={{
-        height: 0,
-      }}
-      animate={{
-        height: 300,
-      }}
-    >
+    <motion.nav className="app__navbar">
       <div className="app__logo">
         <img src={images.logo} alt="logo" />
         {/* <p>rm___</p> */}
         {/* <small>just an archive</small> */}
       </div>
 
-      <motion.button
-        className="menu-btn"
-        whileTap={{ scale: 0.97 }}
-        onClick={() => setIsOpen(!isOpen)}
+      <motion.aside
+        initial={{
+          width: 0,
+        }}
+        animate={{
+          width: 300,
+        }}
       >
-        Menu
-        <motion.div
-          variants={{
-            open: { rotate: 180 },
-            closed: { rotate: 0 },
-          }}
+        <motion.button
+          className="menu-btn"
+          whileTap={{ scale: 0.97 }}
+          onClick={() => setIsOpen(!isOpen)}
         >
-          <img src={images.up} />
-        </motion.div>
-      </motion.button>
-      <motion.ul
-        className="app__navbar-links"
-        variants={variants}
-        initial={false}
-        animate={isOpen ? "open" : "closed"}
-        style={{ pointerEvents: isOpen ? "auto" : "none" }}
-      >
-        <motion.li variants={variants}>
-          <Link to="/">home</Link>
-        </motion.li>
-        {["about", "news"].map((item) => (
-          <motion.li key={`link-${item}`} variants={variants}>
-            <a href={`#${item}`}>{item}</a>
+          Menu
+          <motion.div
+            variants={{
+              open: { rotate: 180 },
+              closed: { rotate: 0 },
+            }}
+          >
+            <img src={images.up} />
+          </motion.div>
+        </motion.button>
+        <motion.ul
+          className="app__navbar-links"
+          variants={variants}
+          initial={false}
+          animate={isOpen ? "open" : "closed"}
+          style={{ pointerEvents: isOpen ? "auto" : "none" }}
+        >
+          <motion.li variants={variants}>
+            <Link to="/">home</Link>
           </motion.li>
-        ))}
-        <motion.li variants={variants}>
-          <Link to="discography">discography</Link>
-        </motion.li>
-      </motion.ul>
+          {["about", "news"].map((item) => (
+            <motion.li key={`link-${item}`} variants={variants}>
+              <a href={`#${item}`}>{item}</a>
+            </motion.li>
+          ))}
+          <motion.li variants={variants}>
+            <Link to="discography">discography</Link>
+          </motion.li>
+        </motion.ul>
+      </motion.aside>
     </motion.nav>
   );
 }
