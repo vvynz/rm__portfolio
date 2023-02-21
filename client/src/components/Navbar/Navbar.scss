@@ -3,15 +3,12 @@
 
   display: flex;
   justify-content: space-between;
-  // align-items: center;
 
   background: rgba(255, 255, 255, 0.25);
   padding: 1rem 2rem;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-
-  // z-index: 2;
 }
 
 .app__logo {
@@ -44,25 +41,21 @@
 }
 
 .app__menu {
-
-  width: 18rem;
-  height: 20vh;
-  // top: 0;
-  // right: 0;
-
-  // background: rgba(255, 255, 255, 0.25);
-  // backdrop-filter: blur(5px);
+ 
 }
 
 .app__navbar-links {
-  border: 1px solid black;
+  // border: 1px solid black;
   list-style: none;
   padding: 1rem;
   font-size: 1.2rem;
+  text-align: center;
 
   position: absolute;
   top: 2em;
   right: 0;
+  width: 15rem;
+  height: 20vh;
 
   li {
     padding: 0.5rem;
@@ -75,9 +68,6 @@
 
 .menu-btn {
   border: none;
-  // display: flex;
-  // justify-content: space-between;
-  // width: 7em;
   background-color: transparent;
   color: var(--dark-color);
 
