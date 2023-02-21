@@ -9,6 +9,8 @@ import wildflower from "../assets/wildflower.gif";
 import play from "../assets/play.svg";
 import up from "../assets/up-arrow.png";
 import leftArrow from "../assets/left-arrow.png";
+import menu from "../assets/menu-icon.svg";
+import xIcon from "../assets/x-icon.svg";
 
 export default {
   indigoHeader,
@@ -17,9 +19,11 @@ export default {
   instagram,
   leftArrow,
   logo,
+  menu,
   spotify,
   youtube,
   wildflower,
   play,
-  up
+  up,
+  xIcon
 };
