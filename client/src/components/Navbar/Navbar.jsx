@@ -46,11 +46,11 @@ export default function Navbar() {
             }}
             animate={{
               width: 300,
-              height: 200
+              height: 200,
             }}
             exit={{
               width: 0,
-              transition: { delay: 0.7, duration: 0.3 },
+              transition: { delay: 0.1, duration: 0.3 },
             }}
           >
             <motion.ul
@@ -96,14 +96,7 @@ export default function Navbar() {
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen(!isOpen)}
         >
-          Menu
-          <img
-            src={images.up}
-            variants={{
-              open: { rotate: 180 },
-              closed: { rotate: 0 },
-            }}
-          />
+          {isOpen ? <img src={images.xIcon} /> : <img src={images.menu} />}
         </motion.button>
       </motion.div>
     </nav>
