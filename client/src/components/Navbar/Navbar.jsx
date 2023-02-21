@@ -31,7 +31,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.nav className="app__navbar">
+    <nav className="app__navbar">
       <div className="app__logo">
         <img src={images.logo} alt="logo" />
         {/* <p>rm___</p> */}
@@ -46,6 +46,7 @@ export default function Navbar() {
             }}
             animate={{
               width: 300,
+              height: 200
             }}
             exit={{
               width: 0,
@@ -59,7 +60,7 @@ export default function Navbar() {
               animate="open"
               // animate={isOpen ? "open" : "closed"}
               exit="closed"
-              style={{ pointerEvents: isOpen ? "auto" : "none" }}
+              // style={{ pointerEvents: isOpen ? "auto" : "none" }}
             >
               <motion.li
                 variants={itemVariants}
@@ -89,13 +90,13 @@ export default function Navbar() {
           </motion.aside>
         )}
       </AnimatePresence>
-      <motion.button
-        className="menu-btn"
-        whileTap={{ scale: 0.9 }}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        Menu
-        <motion.div variants={sideVariants}>
+      <motion.div variants={sideVariants}>
+        <motion.button
+          className="menu-btn"
+          whileTap={{ scale: 0.9 }}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Menu
           <img
             src={images.up}
             variants={{
@@ -103,8 +104,8 @@ export default function Navbar() {
               closed: { rotate: 0 },
             }}
           />
-        </motion.div>
-      </motion.button>
-    </motion.nav>
+        </motion.button>
+      </motion.div>
+    </nav>
   );
 }
