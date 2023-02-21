@@ -50,7 +50,7 @@ export default function Navbar() {
             }}
             exit={{
               width: 0,
-              transition: { delay: 0.1, duration: 0.3 },
+              transition: { delay: 0.5, duration: 0.3 },
             }}
           >
             <motion.ul
@@ -60,7 +60,6 @@ export default function Navbar() {
               animate="open"
               // animate={isOpen ? "open" : "closed"}
               exit="closed"
-              // style={{ pointerEvents: isOpen ? "auto" : "none" }}
             >
               <motion.li
                 variants={itemVariants}
