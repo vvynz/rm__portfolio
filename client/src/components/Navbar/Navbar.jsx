@@ -50,7 +50,7 @@ export default function Navbar() {
             }}
             exit={{
               width: 0,
-              transition: { delay: 0.5, duration: 0.3 },
+              transition: { duration: 0.1 },
             }}
           >
             <motion.ul

@@ -4,9 +4,22 @@ import "./App.scss";
 import { Navbar, ScrollToTop } from "./components";
 import { About, Header, MediaReleases, News, Footer } from "./container";
 
+import { motion } from "framer-motion";
+
 function App() {
   return (
-    <div className="App">
+    <motion.div
+      className="App"
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      exit={{
+        opacity: 0,
+      }}
+    >
       <Navbar />
       <Header />
       <About />
@@ -14,7 +27,7 @@ function App() {
       <News />
       <Footer />
       <ScrollToTop />
-    </div>
+    </motion.div>
   );
 }
 
