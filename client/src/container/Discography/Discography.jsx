@@ -27,14 +27,22 @@ export default function Discography() {
         opacity: 0,
       }}
       animate={{
-        opacity: 1
+        opacity: 1,
       }}
       exit={{
-       opacity: 0
+        opacity: 0,
       }}
     >
       <Link to="/" className="nav-link">
-        <img src={images.leftArrow} />
+        <motion.img
+          src={images.leftArrow}
+          whileHover={{
+            scale: 1.2,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
+        />
       </Link>
       <h1>DISCOGRAPHY</h1>
       <div className="app__discography-wrapper">

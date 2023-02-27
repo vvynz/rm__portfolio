@@ -41,7 +41,7 @@ export default function ScrollToTop() {
           animate={{ y: 0, opacity: 1, transition: { duration: 0.7 } }}
           exit={{ y: 300, opacity: 0, transition: { duration: 0.7 } }}
           whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 1 }}
+          whileTap={{ scale: 0.9 }}
         >
           <img src={images.up} />
         </motion.button>

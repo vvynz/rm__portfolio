@@ -64,6 +64,7 @@ export default function Navbar() {
               <motion.li
                 variants={itemVariants}
                 whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring" }}
               >
                 <Link to="/">home</Link>
@@ -73,6 +74,7 @@ export default function Navbar() {
                   key={`link-${item}`}
                   variants={itemVariants}
                   whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring" }}
                 >
                   <a href={`#${item}`}>{item}</a>
@@ -81,6 +83,7 @@ export default function Navbar() {
               <motion.li
                 variants={itemVariants}
                 whileHover={{ scale: 1.2}}
+                whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring" }}
               >
                 <Link to="discography">discography</Link>
