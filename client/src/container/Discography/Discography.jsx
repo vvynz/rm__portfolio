@@ -1,7 +1,10 @@
 // Dependencies
 import React, { useState, useEffect } from "react";
 import { client, urlFor } from "../../../client";
+
+// Dependencies
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 // Images & Stylesheets
 import { images } from "../../constants";
@@ -18,7 +21,21 @@ export default function Discography() {
   // console.log(discography);
 
   return (
-    <section className="app__discography">
+    <motion.section
+      className="app__discography"
+      initial={{
+        width: 0,
+      }}
+      animate={{
+        width: "100%",
+      }}
+      exit={{
+        x: window.innerWidth,
+        transition: {
+          duration: 0.1,
+        },
+      }}
+    >
       <Link to="/" className="nav-link">
         <img src={images.leftArrow} />
       </Link>
@@ -41,6 +58,6 @@ export default function Discography() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
