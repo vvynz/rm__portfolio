@@ -1,5 +1,9 @@
 {
   "root": true,
+  "api": {
+    "projectId": "1gvsuh4l",
+    "dataset": "production"
+  },
   "project": {
     "name": "rm_portfolio"
   },
