@@ -35,6 +35,18 @@ export default function Header() {
         <SwiperSlide>
           <div className="app__header-img">
             <img
+              className="RPWP_banner"
+              src={images.RPWPBanner}
+              alt="RPWP Banner"
+            />
+          </div>
+          <div className="app_header-news">
+            <p>"Right Person Wrong Place" Pre-orders coming soon</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="app__header-img">
+            <img
               className="header__banner"
               src={images.indigoHeader}
               alt="Indigo banner"

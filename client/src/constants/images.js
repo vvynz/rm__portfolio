@@ -5,6 +5,7 @@ import youtube from "../assets/youtube.svg";
 import indigoHeader from "../assets/indigo_header.png";
 import indigoBanner from "../assets/indigo_banner.png";
 import indigoLP from "../assets/indigo_lp.jpeg";
+import RPWPBanner from "../assets/RM_RPWP_Banner.png";
 import wildflower from "../assets/wildflower.gif";
 import play from "../assets/play.svg";
 import up from "../assets/up-arrow.png";
@@ -25,5 +26,6 @@ export default {
   wildflower,
   play,
   up,
-  xIcon
+  xIcon,
+  RPWPBanner,
 };

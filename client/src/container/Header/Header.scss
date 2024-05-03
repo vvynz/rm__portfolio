@@ -43,7 +43,7 @@
       bottom: 28%;
 
       color: var(--light-color);
-      font-family: 'Water Brush', cursive;
+      font-family: "Water Brush", cursive;
       font-size: 10rem;
     }
 
@@ -83,7 +83,7 @@
       &:visited {
         color: var(--dark-color);
       }
-  
+
       &:hover {
         cursor: pointer;
         background-color: var(--indigo-color);
@@ -91,5 +91,11 @@
         color: var(--light-color);
       }
     }
+  }
+
+  .RPWP_banner {
+    position: relative;
+    top: 20%;
+    max-width: 80%;
   }
 }
