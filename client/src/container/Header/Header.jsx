@@ -70,7 +70,7 @@ export default function Header() {
               href="https://ingrv.es/Indigo"
               target="_blank"
             >
-              order now
+              purchase here
             </a>
           </div>
         </SwiperSlide>
@@ -83,13 +83,13 @@ export default function Header() {
             />
           </div>
           <div className="app_header-news">
-            <p>Pre-orders for Indigo Vinyl Live Now!</p>
+            <p>Indigo Vinyl Live Now!</p>
             <a
               className="app__btn"
               href="https://ingrv.es/indigovinyl"
               target="_blank"
             >
-              order now
+              available now
             </a>
           </div>
         </SwiperSlide>
