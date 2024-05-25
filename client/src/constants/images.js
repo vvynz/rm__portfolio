@@ -12,6 +12,7 @@ import up from "../assets/up-arrow.png";
 import leftArrow from "../assets/left-arrow.png";
 import menu from "../assets/menu-icon.svg";
 import xIcon from "../assets/x-icon.svg";
+import cbtm from "../assets/rm_cbtm_banner.jpeg";
 
 export default {
   indigoHeader,
@@ -28,4 +29,5 @@ export default {
   up,
   xIcon,
   RPWPBanner,
+  cbtm,
 };
