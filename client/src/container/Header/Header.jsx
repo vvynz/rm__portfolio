@@ -17,6 +17,7 @@ import "./Header.scss";
 export default function Header() {
   return (
     <section className="app__header-container">
+      {/* <img src={images.cbtm} /> */}
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         centeredSlides={true}
@@ -41,7 +42,14 @@ export default function Header() {
             />
           </div>
           <div className="app_header-news">
-            <p>"Right Person Wrong Place" Pre-orders coming soon</p>
+            <p>"Right Person Wrong Place" out now everywhere!</p>
+            <a
+              className="app__btn"
+              href="https://rm.lnk.to/rightplacewrongperson"
+              target="_blank"
+            >
+              purchase here
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
