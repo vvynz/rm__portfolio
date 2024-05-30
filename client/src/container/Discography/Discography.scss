@@ -13,9 +13,10 @@
     img {
       width: 2rem;
       height: 2rem;
-      // filter: invert(40%); 
+      // filter: invert(40%);
       // color is = val(--indigo-color)
-      filter: invert(29%) sepia(98%) saturate(509%) hue-rotate(162deg) brightness(95%) contrast(91%)
+      filter: invert(29%) sepia(98%) saturate(509%) hue-rotate(162deg)
+        brightness(95%) contrast(91%);
     }
   }
 
@@ -32,7 +33,7 @@
   padding: 1em 1em 1.5em 1em;
 
   // sm screens max-width: 512px
-  @media screen and (max-width: 32em) {
+  @media screen and (max-width: 40em) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +77,7 @@
   // }
 
   // sm screens max-width: 640px
-  @media screen and (max-width: 40em) {
+  @media screen and (max-width: 60em) {
     width: 15em;
     height: 15em;
   }
