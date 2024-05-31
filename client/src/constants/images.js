@@ -13,6 +13,7 @@ import leftArrow from "../assets/left-arrow.png";
 import menu from "../assets/menu-icon.svg";
 import xIcon from "../assets/x-icon.svg";
 import cbtm from "../assets/rm_cbtm_banner.jpeg";
+import RPWPMain from "../assets/rm_rpwp_main.jpeg";
 
 export default {
   indigoHeader,
@@ -30,4 +31,5 @@ export default {
   xIcon,
   RPWPBanner,
   cbtm,
+  RPWPMain,
 };

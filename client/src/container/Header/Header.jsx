@@ -17,7 +17,7 @@ import "./Header.scss";
 export default function Header() {
   return (
     <section className="app__header-container">
-      {/* <img src={images.cbtm} /> */}
+      <img className="app__header_main" src={images.RPWPMain} />
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         centeredSlides={true}
