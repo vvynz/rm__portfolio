@@ -43,8 +43,8 @@ export default function Release() {
           v1["_createdAt"] < v2["_createdAt"]
             ? 1
             : v1["_createdAt"] > v2["_createdAt"]
-            ? -1
-            : 0
+              ? -1
+              : 0
         )
         .map((video, index) => (
           <div key={index} className="app__release-item">
@@ -55,8 +55,12 @@ export default function Release() {
           </div>
         ))}
 
-      <p>INDIGO ALBUM OUT NOW</p>
-      <a className="app__btn" href="https://ingrv.es/Indigo" target="_blank">
+      <p>RIGHT PERSON WRONG PLACE ALBUM OUT NOW</p>
+      <a
+        className="app__btn"
+        href="https://rm.lnk.to/rightplacewrongperson"
+        target="_blank"
+      >
         BUY HERE
       </a>
     </section>
