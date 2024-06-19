@@ -10,7 +10,7 @@ import wildflower from "../assets/wildflower.gif";
 import play from "../assets/play.svg";
 import up from "../assets/up-arrow.png";
 import leftArrow from "../assets/left-arrow.png";
-import menu from "../assets/menu-icon.svg";
+import menu from "../assets/menu-icon.png";
 import xIcon from "../assets/x-icon.svg";
 import cbtm from "../assets/rm_cbtm_banner.jpeg";
 import RPWPMain from "../assets/rm_rpwp_main.jpeg";

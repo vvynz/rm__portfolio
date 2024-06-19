@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./RM___files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM__</title>
+  <link href="chrome-extension://idpbkophnbfijcnlffdmmppgnncgappc/css/content.css" rel="stylesheet" type="text/css"><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/App.scss">.App {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  min-height: 100vh;
+}
+
+.app__btn {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 10px 75px;
+  transition: all 0.3s ease-in-out 0s;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/components/Navbar/Navbar.scss">.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.app__logo img {
+  filter: invert(40%);
+}
+.app__logo p {
+  font-size: 35px;
+  font-weight: 700;
+}
+.app__logo small {
+  font-size: 18px;
+}
+@media screen and (min-width: 2000px) {
+  .app__logo p {
+    font-size: 45px;
+  }
+  .app__logo small {
+    font-size: 24px;
+  }
+}
+
+.app__menu {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  height: 20vh;
+}
+
+.app__navbar-links {
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.app__navbar-links li {
+  padding: 0.75rem;
+}
+.app__navbar-links a {
+  text-decoration: none;
+}
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
+  filter: invert(50%);
+  color: var(--light-color);
+}
+.menu-btn img {
+  height: 2rem;
+  width: 2rem;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/components/EmbededVideo.scss">.video__wrapper {
+  text-align: center;
+  margin: 1em 0;
+}
+@media screen and (max-width: 40em) {
+  .video__wrapper iframe {
+    width: 100%;
+  }
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/components/Article/Article.scss">.app__article {
+  border-radius: 0.5rem;
+  box-shadow: 20px 20px 60px #c9ced3, -20px -20px 60px #fff;
+  margin: 2rem auto;
+  max-width: 750px;
+  min-height: 100px;
+  padding: 1rem 1.2rem 1rem;
+}
+.app__article a {
+  text-decoration: none;
+}
+.app__article a:visited {
+  color: var(--dark-color);
+}
+.app__article h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.article-text {
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 1rem;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/components/ScrollToTop/ScrollToTop.scss">.up-btn {
+  position: fixed;
+  bottom: 0;
+  right: 7rem;
+  background-color: var(--light-color);
+  border: 1px solid var(--dark-color);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 20% 20% 0 0;
+  cursor: pointer;
+}
+.up-btn img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.up-btn:hover {
+  background-color: var(--indigo-color);
+  border: 1px solid var(--indigo-color);
+  opacity: 0.9;
+  transition: 0.3s ease-in-out;
+}
+.up-btn:hover img {
+  filter: invert(100%);
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/container/About/About.scss">.app__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem auto;
+  max-width: 750px;
+  height: 50vh;
+}
+.app__about p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/container/Discography/Discography.scss">.app__discography {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  min-height: 100vh;
+}
+.app__discography .nav-link {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+.app__discography .nav-link img {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(29%) sepia(98%) saturate(509%) hue-rotate(162deg) brightness(95%) contrast(91%);
+}
+.app__discography h1 {
+  font-size: 2.25em;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.app__discography-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 1em 1.5em 1em;
+}
+@media screen and (max-width: 40em) {
+  .app__discography-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.app__discography-album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app__discography-album h2 {
+  padding-top: 1em;
+}
+.app__discography-album p {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 25em) {
+  .app__discography-album p {
+    font-size: 1rem;
+  }
+}
+.app__discography-album li {
+  list-style: none;
+}
+
+.discography__album-img {
+  width: 25em;
+  height: 25em;
+  padding: 1rem 0;
+}
+@media screen and (max-width: 60em) {
+  .discography__album-img {
+    width: 15em;
+    height: 15em;
+  }
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/container/Footer/Footer.scss">.app__footer {
+  padding: 1rem 1rem;
+  background-color: var(--bg-dark);
+  color: var(--light-color);
+}
+
+.app__footer-socials {
+  padding-top: 1rem;
+  height: 10vh;
+}
+
+.app__footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.app__footer-social-links li {
+  margin: 1rem;
+}
+.app__footer-social-links li svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--light-color);
+}
+
+.app__footer-credits {
+  height: 5vh;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/node_modules/swiper/swiper.scss">/**
+ * Swiper 8.4.5
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2014-2022 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: November 21, 2022
+ */
+@font-face {
+  font-family: "swiper-icons";
+  src: url("data:application/font-woff;charset=utf-8;base64, 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") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --swiper-theme-color: #007aff;
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+.swiper-vertical > .swiper-wrapper {
+  flex-direction: column;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+.swiper-android .swiper-slide,
+.swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+.swiper-pointer-events {
+  touch-action: pan-y;
+}
+.swiper-pointer-events.swiper-vertical {
+  touch-action: pan-x;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+.swiper-slide-invisible-blank {
+  visibility: hidden;
+}
+/* Auto Height */
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+/* 3D Effects */
+.swiper-3d, .swiper-3d.swiper-css-mode .swiper-wrapper {
+  perspective: 1200px;
+}
+.swiper-3d .swiper-wrapper,
+.swiper-3d .swiper-slide,
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-cube-shadow {
+  transform-style: preserve-3d;
+}
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top,
+.swiper-3d .swiper-slide-shadow-bottom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+.swiper-3d .swiper-slide-shadow {
+  background: rgba(0, 0, 0, 0.15);
+}
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-3d .swiper-slide-shadow-top {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.swiper-3d .swiper-slide-shadow-bottom {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+/* CSS Mode */
+.swiper-css-mode > .swiper-wrapper {
+  overflow: auto;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+.swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.swiper-css-mode > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: start start;
+}
+.swiper-horizontal.swiper-css-mode > .swiper-wrapper {
+  scroll-snap-type: x mandatory;
+}
+.swiper-vertical.swiper-css-mode > .swiper-wrapper {
+  scroll-snap-type: y mandatory;
+}
+.swiper-centered > .swiper-wrapper::before {
+  content: "";
+  flex-shrink: 0;
+  order: 9999;
+}
+.swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {
+  margin-inline-start: var(--swiper-centered-offset-before);
+}
+.swiper-centered.swiper-horizontal > .swiper-wrapper::before {
+  height: 100%;
+  width: var(--swiper-centered-offset-after);
+}
+.swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {
+  margin-block-start: var(--swiper-centered-offset-before);
+}
+.swiper-centered.swiper-vertical > .swiper-wrapper::before {
+  width: 100%;
+  height: var(--swiper-centered-offset-after);
+}
+.swiper-centered > .swiper-wrapper > .swiper-slide {
+  scroll-snap-align: center center;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/node_modules/swiper/modules/pagination/pagination.scss">:root {
+  /*
+  --swiper-pagination-color: var(--swiper-theme-color);
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #000;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+  */
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+
+.swiper-pagination-disabled > .swiper-pagination, .swiper-pagination.swiper-pagination-disabled {
+  display: none !important;
+}
+
+/* Common Styles */
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+/* Bullets */
+
+.swiper-pagination-bullets-dynamic {
+  overflow: hidden;
+  font-size: 0;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transform: scale(0.33);
+  position: relative;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+  transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+  transform: scale(0.33);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+  transform: scale(0.33);
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--swiper-pagination-bullet-inactive-color, #000);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+}
+
+button.swiper-pagination-bullet {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  appearance: none;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet:only-child {
+  display: none !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+
+.swiper-vertical > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets {
+  right: 10px;
+  top: 50%;
+  transform: translate3d(0px, -50%, 0);
+}
+
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: var(--swiper-pagination-bullet-vertical-gap, 6px) 0;
+  display: block;
+}
+
+.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+}
+
+.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  display: inline-block;
+  transition: 200ms transform, 200ms top;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 200ms transform, 200ms left;
+}
+
+.swiper-horizontal.swiper-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 200ms transform, 200ms right;
+}
+
+/* Progress */
+
+.swiper-pagination-progressbar {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transform-origin: left top;
+}
+
+.swiper-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  transform-origin: right top;
+}
+
+.swiper-horizontal > .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 0;
+}
+
+.swiper-vertical > .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-vertical, .swiper-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite {
+  width: 4px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.swiper-pagination-lock {
+  display: none;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/node_modules/swiper/modules/navigation/navigation.scss">:root {
+  --swiper-navigation-size: 44px;
+  /*
+  --swiper-navigation-color: var(--swiper-theme-color);
+  */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-prev.swiper-button-hidden,
+.swiper-button-next.swiper-button-hidden {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-navigation-disabled .swiper-button-prev,
+.swiper-navigation-disabled .swiper-button-next {
+  display: none !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+}
+
+.swiper-button-lock {
+  display: none;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/container/Header/HeaderUpdates.scss">.app__header-updates {
+  position: relative;
+  height: 100vh;
+}
+.app__header-updates .app__header_main {
+  width: 100vw;
+}
+.app__header-updates .app__header-img {
+  text-align: center;
+  height: 100vh;
+}
+.app__header-updates .app__header-img .header__banner {
+  display: block;
+  margin: auto;
+  max-height: 100vh;
+  max-width: 100%;
+  padding: 2em;
+}
+.app__header-updates .app__header-img .header__img {
+  height: 70vh;
+  margin: 2.5em auto;
+}
+.app__header-updates .app__header-img .header-caption {
+  display: flex;
+  justify-content: center;
+}
+.app__header-updates .app__header-img p {
+  position: absolute;
+  bottom: 28%;
+  color: var(--light-color);
+  font-family: "Water Brush", cursive;
+  font-size: 10rem;
+}
+.app__header-updates .app__header-img a:hover {
+  cursor: pointer;
+}
+.app__header-updates .app__header-img svg {
+  position: absolute;
+  left: 49%;
+  top: 40%;
+  width: 45px;
+  height: 45px;
+  fill: var(--light-color);
+}
+.app__header-updates .app_header-news {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  text-transform: uppercase;
+}
+.app__header-updates .app_header-news p {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--dark-color);
+  text-align: center;
+}
+.app__header-updates .app_header-news .app__btn {
+  background-color: transparent;
+  border: 1px solid var(--dark-color);
+}
+.app__header-updates .app_header-news .app__btn:visited {
+  color: var(--dark-color);
+}
+.app__header-updates .app_header-news .app__btn:hover {
+  cursor: pointer;
+  background-color: var(--indigo-color);
+  opacity: 0.9;
+  color: var(--light-color);
+}
+.app__header-updates .RPWP_banner {
+  position: relative;
+  top: 20%;
+  max-width: 90%;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/container/Header/Header.scss">.app__header-hero {
+  width: 100vw;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/container/News/News.scss">.app__news-container {
+  text-align: center;
+}
+.app__news-container .app__news-container-title {
+  border-bottom: 1px solid var(--dark-color);
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 25%;
+  font-size: 3.5rem;
+}
+.app__news-container .swiperSlide {
+  min-height: 60vh;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/container/MediaReleases/MediaReleases.scss">.app__release {
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app__release .app__release-item {
+  margin: 1rem auto;
+}
+.app__release p {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--light-color);
+}
+.app__release .app__btn {
+  border: 1px solid var(--light-color);
+}
+.app__release .app__btn:visited {
+  color: var(--light-color);
+}
+.app__release .app__btn:hover {
+  cursor: pointer;
+  background-color: var(--dark-color);
+  border: 1px solid var(--light-color);
+  opacity: 0.9;
+  color: var(--light-color);
+}
+
+.app__release-title {
+  color: var(--light-color);
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  font-size: 2em;
+}</style><style type="text/css" data-vite-dev-id="/Users/Vivian/GitHub/rm_portfolio/client/src/index.css">@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+
+:root {
+  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Fragment Mono", monospace; */
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  --dark-color: rgba(52, 55, 62, 0.8);
+  --light-color: #edf2f8;
+  --bg-dark: #242424;
+  --indigo-color: rgb(25, 103, 151);
+  --blue-color: #195891; 
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}</style><style type="text/css">img[onload^="SVGInject("]{visibility:hidden;}</style></head>
+  <body cz-shortcut-listen="true">
+    <div id="root"><div class="App" style="opacity: 1;"><nav class="app__navbar"><div class="app__logo"><img src="./RM___files/rm_logo.png" alt="logo"></div><div><button class="menu-btn" style="transform: none;"><img src="./RM___files/menu-icon.png"></button></div></nav><section class="app__header-container"><img class="app__header-hero" src="./RM___files/rm_rpwp_main.jpeg"><div class="app__header-updates"><div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"><div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-active" style="width: 1828px;"><div class="app__header-img"><img class="RPWP_banner" src="./RM___files/RM_RPWP_Banner.png" alt="RPWP Banner"></div><div class="app_header-news"><p>"Right Person Wrong Place" out now everywhere!</p><a class="app__btn" href="https://rm.lnk.to/rightplacewrongperson" target="_blank">purchase here</a></div></div><div class="swiper-slide swiper-slide-next" style="width: 1828px;"><div class="app__header-img"><img class="header__banner" src="./RM___files/indigo_header.png" alt="Indigo banner"></div></div><div class="swiper-slide" style="width: 1828px;"><div class="app__header-img"><img class="header__img" src="./RM___files/wildflower.gif" alt="Wild Flower music video"><a href="https://www.youtube.com/watch?v=u18be_kRmC0" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-inject-url="http://localhost:5173/src/assets/play.svg" class="app__icon"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></svg></a><div class="header-caption"><p>wildflower</p></div></div><div class="app_header-news"><p>Indigo out now</p><a class="app__btn" href="https://ingrv.es/Indigo" target="_blank">purchase here</a></div></div><div class="swiper-slide" style="width: 1828px;"><div class="app__header-img"><img class="header__img" src="./RM___files/indigo_lp.jpeg" alt="Indigo LP cover image"></div><div class="app_header-news"><p>Indigo Vinyl Live Now!</p><a class="app__btn" href="https://ingrv.es/indigovinyl" target="_blank">available now</a></div></div></div><div class="swiper-button-prev swiper-button-disabled"></div><div class="swiper-button-next"></div><div class="swiper-scrollbar"></div><div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div></div></div></section><section id="about" class="app__about"><p>RM of 21st-century pop icons BTS, released a new solo album, Indigo on Dec 2.
+
+Like a diary, Indigo recounts the stories and experiences RM has gone through.</p><p>It is a record of his 20s and a candid introduction of who RM truly is.
+
+The album comprises 10 tracks of various genres and with several featured artists, including the lead single "Wild Flower (with Youjeen)." RM led the overall production of the album from writing the songs and lyrics, developing the album's concept, and designing album art to developing the music video..</p></section><section id="work" class="app__release"><h1 class="app__release-title">Latest Release</h1><div class="app__release-item"><section><span style="transform: translateX(-500px); opacity: 0; transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;"><p>RM 'Groin' Official MV</p><div class="video__wrapper"><iframe width="640" height="360" title="Youtube video player" frameborder="0" src="./RM___files/ChAXAFqzBpw.html" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></span></section></div><div class="app__release-item"><section><span style="transform: translateX(-500px); opacity: 0; transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;"><p>RM 'LOST!' Offical MV</p><div class="video__wrapper"><iframe width="640" height="360" title="Youtube video player" frameborder="0" src="./RM___files/kq6UVL3H6SI.html" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></span></section></div><div class="app__release-item"><section><span style="transform: translateX(-500px); opacity: 0; transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;"><p>RM 'Come back to me' Official MV</p><div class="video__wrapper"><iframe width="640" height="360" title="Youtube video player" frameborder="0" src="./RM___files/NrfikKxF4Ps.html" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></span></section></div><div class="app__release-item"><section><span style="transform: translateX(-500px); opacity: 0; transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;"><p>RM 'Indigo' Album Magazine Film</p><div class="video__wrapper"><iframe width="640" height="360" title="Youtube video player" frameborder="0" src="./RM___files/lRy8OYhLO-A.html" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></span></section></div><div class="app__release-item"><section><span style="transform: translateX(-500px); opacity: 0; transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;"><p>"Still Life (with Anderson .Paak)" Official MV</p><div class="video__wrapper"><iframe width="640" height="360" title="Youtube video player" frameborder="0" src="./RM___files/2vfmL4q2koo.html" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></span></section></div><div class="app__release-item"><section><span style="transform: translateX(-500px); opacity: 0; transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;"><p>"Wild Flower (with Youjeen)" Official MV</p><div class="video__wrapper"><iframe width="640" height="360" title="Youtube video player" frameborder="0" src="./RM___files/u18be_kRmC0.html" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div></span></section></div><p>RIGHT PERSON WRONG PLACE ALBUM OUT NOW</p><a class="app__btn" href="https://rm.lnk.to/rightplacewrongperson" target="_blank">BUY HERE</a></section><section id="news" class="app__news-container"><h1 class="app__news-container-title">News</h1><div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"><div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-active swiperSlide" style="width: 1828px; margin-right: 30px;"><div class="app__article"><a href="https://variety.com/2022/music/news/bts-rm-indigo-solo-album-erykah-badu-anderson-paak-military-wildflower-band-1235447669/" target="_blank"><h1>BTS’ RM on His ‘Indigo’ Album, Duets With Erykah Badu and Anderson .Paak, Military Service and Why Solo Careers Will Bolster the Band</h1></a><p class="article-text">I think before this album, I was always concentrating on wanting to prove something to people. Like, “I just want to make you guys listen to this. I want to just share my thoughts. Please listen to this!” This time I was focusing on expanding my personal thoughts to something universal, so people can approach it and think it could be their own stories, too. When I made this, it was all mine. But once I made this whole album, it feels like it’s not mine anymore, and I just give it to people, and people would maybe digest it and, through their own colors, reflect on their own lives.</p></div></div><div class="swiper-slide swiper-slide-next swiperSlide" style="width: 1828px; margin-right: 30px;"><div class="app__article"><a href="https://www.nme.com/features/music-features/bts-rm-interview-indigo-3356430" target="_blank"><h1>RM of BTS: “My whole twenties were an exhibition… but I chose to be a star”</h1></a><p class="article-text">‘Indigo’ captures snapshots of navigating that uncertainty and change, from relationships to a life that’s unfolded under the scrutiny of the public eye. Elsewhere on ‘Still Life’ he raps: “The past’s gone, the future’s unknown / Catching my breath on a crossroads.” This record, which RM describes as being like a diary of his life between 2019 and 2022, feels like that pause, looking left and right, north and south, trying to work out which way to turn next.</p></div></div><div class="swiper-slide swiperSlide" style="width: 1828px; margin-right: 30px;"><div class="app__article"><a href="https://www.vogue.com/article/rm-bts-indigo-interview" target="_blank"><h1>'It Documents My Growth as an Artist and a Person': RM on Creativity, Collaboration, and His First Solo Album</h1></a><p class="article-text">“Indigo still explores my emotions and learnings through my experiences.” The shift toward a more intimate kind of storytelling is something he hopes will resonate with listeners. “It’s more open in a way people can easily relate to”</p></div></div><div class="swiper-slide swiperSlide" style="width: 1828px; margin-right: 30px;"><div class="app__article"><a href="https://consequence.net/2022/12/rm-indigo-review-bts-album-analysis/" target="_blank"><h1>With Indigo, RM Makes Fleeting Moments Feel Permanent</h1></a><p class="article-text">Indigo contains many things — an artist expressing the frustrations of a uniquely isolating chapter of life, creative catharsis, room for experimentation, poignant unraveling of heartbreak and hope. Most of all, though, it’s a record from a writer at the very top of his game who has proven that he still has so far to go and so much to share. RM paints with brushstrokes of his own that are never broad, and always intentional</p></div></div><div class="swiper-slide swiperSlide" style="width: 1828px; margin-right: 30px;"><div class="app__article"><a href="https://magazine.weverse.io/article/view?ref=main&amp;num=600&amp;lang=en" target="_blank"><h1>RM paves the way</h1></a><p class="article-text">This is where Indigo sets up a paradox: RM has created an album that has to be listened in full from beginning to end and consumed as a whole in order to understand the context and intention behind the spectrum of tracks that draw from an array of genres and artists both past and present. The intricate approach to production not only takes on a nearly impossible task but does so with songs designed to be part of a greater whole that each make thoughtful use of the strengths of their featured artists to form one cohesive creative work. The final product shows how much attention RM pays to the world of music, his natural sensibilities and taste and what caliber of producer he must be in order to pull it all off in a single album. This is an artist who used every last one of his plethora of musical assets to follow his own path rather than outside trends and created the quintessential soundtrack to twentysomethings living their lives everywhere in the world today, capturing their emotions and their style with shrewd insight. As what amounts to a compilation of different genres unified by one cohesive emotion, it’s a ready playlist for anyone who sympathizes with the sentiment that runs throughout.</p></div></div><div class="swiper-slide swiperSlide" style="width: 1828px; margin-right: 30px;"><div class="app__article"><a href="https://www.theatlantic.com/culture/archive/2022/12/rm-bts-indigo-album/672307/" target="_blank"><h1>RM OF BTS IS EMBRACING THE SILENCE</h1></a><p class="article-text">Indigo is a way of “speaking silence”—essentially, expressing himself truthfully in a way that doesn’t cause chaos or confusion..."it’s really hard to be honest and frank,...Emphasizing silence is really hard, because you have a lot of platforms, like Instagram and Facebook and YouTube; people have their own minds but can still be easily manipulated by algorithms and articles and other people.” In this environment, he said, knowing when to talk and when to remain quiet is even more valuable.</p></div></div></div><div class="swiper-button-prev swiper-button-disabled"></div><div class="swiper-button-next"></div><div class="swiper-scrollbar"></div><div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div></div></section><div class="app__footer"><div class="app__footer-socials"><ul class="app__footer-social-links"><li><a href="https://www.instagram.com/rkive/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-inject-url="http://localhost:5173/src/assets/instagram.svg" class="social__icons"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a></li><li><a href="https://open.spotify.com/artist/2auC28zjQyVTsiZKNgPRGs?si=onau8lOzR_2irJh7zRpABA&amp;nd=1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 305 305" style="enable-background:new 0 0 305 305;" xml:space="preserve" data-inject-url="http://localhost:5173/src/assets/spotify.svg" class="social__icons">
+<g id="XMLID_85_--inject-3">
+	<path id="XMLID_86_--inject-3" d="M152.441,0C68.385,0,0,68.39,0,152.453C0,236.568,68.385,305,152.441,305   C236.562,305,305,236.568,305,152.453C305,68.39,236.562,0,152.441,0z M75.08,208.47c17.674-5.38,35.795-8.108,53.857-8.108   c30.676,0,60.96,7.774,87.592,22.49c1.584,0.863,3.024,3.717,3.67,7.27c0.646,3.552,0.389,7.205-0.648,9.105   c-1.309,2.438-3.965,4.014-6.768,4.014c-1.389,0-2.61-0.312-3.831-0.972c-24.448-13.438-52.116-20.542-80.015-20.542   c-16.855,0-33.402,2.495-49.167,7.409c-0.768,0.233-1.558,0.352-2.348,0.352c-3.452,0.001-6.448-2.198-7.453-5.461   C68.612,219.566,71.419,209.667,75.08,208.47z M68.43,152.303c19.699-5.355,40.057-8.071,60.508-8.071   c36.765,0,73.273,8.896,105.601,25.739c2.266,1.15,3.936,3.1,4.701,5.49c0.776,2.421,0.542,5.024-0.669,7.347   c-2.885,5.646-6.257,9.44-8.393,9.44c-1.514,0-2.975-0.363-4.43-1.09c-30.019-15.632-62.59-23.558-96.811-23.558   c-19.035,0-37.71,2.503-55.489,7.435c-0.827,0.224-1.676,0.337-2.521,0.337c-4.277,0.001-8.046-2.888-9.162-7.013   C60.336,162.994,63.601,153.616,68.43,152.303z M66.727,115.606c-0.903,0.223-1.826,0.335-2.744,0.335   c-5.169,0.001-9.648-3.492-10.892-8.487c-1.559-6.323,2.397-13.668,8.126-15.111c22.281-5.473,45.065-8.248,67.72-8.248   c43.856,0,85.857,9.86,124.851,29.312c2.708,1.336,4.727,3.642,5.687,6.493c0.96,2.854,0.748,5.926-0.592,8.64   c-1.826,3.655-5.772,7.59-10.121,7.59c-1.677,0-3.399-0.393-4.924-1.109c-35.819-17.921-74.477-27.008-114.9-27.008   C108.164,108.014,87.234,110.568,66.727,115.606z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg></a></li><li><a href="https://www.youtube.com/@HYBELABELS" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve" data-inject-url="http://localhost:5173/src/assets/youtube.svg" class="social__icons">
+<g id="XMLID_822_--inject-4">
+	<path id="XMLID_823_--inject-4" d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938   C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527   C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991   c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764   c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861   C204.394,157.263,202.325,160.684,199.021,162.41z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg></a></li></ul></div><div class="app__footer-credits"><p>© 2022 Big Hit Music / Hybe - Website Design by V.Z.</p></div></div></div></div>
+    <script type="module" src="./RM___files/main.jsx"></script>
+  
+
+</body><div style="all: initial !important;"><template shadowrootmode="open"><link rel="stylesheet" type="text/css" href="chrome-extension://idpbkophnbfijcnlffdmmppgnncgappc/css/content.css"></template></div></html>

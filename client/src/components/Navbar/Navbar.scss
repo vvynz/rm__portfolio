@@ -9,7 +9,7 @@
   padding: 1rem 2rem;
   // backdrop-filter: blur(5px);
   // -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  // border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .app__logo {
@@ -68,11 +68,12 @@
 
 .menu-btn {
   border: none;
-  // background-color: transparent;
+  background-color: transparent;
+  filter: invert(80%);
+  // color: var(--light-color);
 
   img {
-    height: 2rem;
-    width: 2rem;
-    color: var(--light-color);
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
