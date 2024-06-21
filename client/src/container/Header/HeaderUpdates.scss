@@ -2,6 +2,7 @@
   // background-color: bisque;
   position: relative;
   height: 100vh;
+  background-color: var(--bg-dark);
 
   .app__header_main {
     width: 100vw;
@@ -38,6 +39,7 @@
     .header-caption {
       display: flex;
       justify-content: center;
+      color: var(--light-color);
       // text-align: center;
     }
 
@@ -76,16 +78,16 @@
     p {
       font-size: 35px;
       font-weight: 700;
-      color: var(--dark-color);
+      color: var(--light-color);
       text-align: center;
     }
 
     .app__btn {
       background-color: transparent;
-      border: 1px solid var(--dark-color);
+      border: 1px solid var(--light-color);
 
       &:visited {
-        color: var(--dark-color);
+        color: var(--light-color);
       }
 
       &:hover {
