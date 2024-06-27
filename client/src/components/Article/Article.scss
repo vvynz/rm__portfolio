@@ -2,8 +2,15 @@
   // border: 1px solid black;
 
   border-radius: 0.5rem;
-  box-shadow: 20px 20px 60px #c9ced3,
-  -20px -20px 60px #fff;
+  box-shadow:
+    rgb(255, 255, 255, 0.15) 20px 20px 55px,
+    rgb(255, 255, 255, 0.15) -16px -16px 55px;
+  // box-shadow:
+  //   rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+  //   rgba(44, 187, 99, 0.15) 0 1px 2px rgba(44, 187, 99, 0.15) 0 2px 4px,
+  //   rgba(44, 187, 99, 0.15) 0 4px 8px,
+  //   rgba(44, 187, 99, 0.15) 0 8px 16px,
+  //   rgba(44, 187, 99, 0.15) 0 16px 32px;
 
   margin: 2rem auto;
   max-width: 750px;
@@ -17,7 +24,7 @@
       color: var(--dark-color);
     }
   }
- 
+
   h1 {
     font-size: 1.2rem;
     font-weight: 800;
