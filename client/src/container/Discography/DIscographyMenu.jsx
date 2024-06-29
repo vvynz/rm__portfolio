@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { client, Client, urlFor } from "../../../client";
+import { client, urlFor } from "../../../client";
 
 import { motion } from "framer-motion";
 

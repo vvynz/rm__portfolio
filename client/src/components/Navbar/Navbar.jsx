@@ -1,11 +1,12 @@
 //Dependencies
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
 // Images & Stylesheets
 import { images } from "../../constants";
 import "./Navbar.scss";
+import DiscographyMenu from "../../container/Discography/DIscographyMenu";
 
 const sideVariants = {
   closed: {
@@ -82,7 +83,7 @@ export default function Navbar() {
               ))}
               <motion.li
                 variants={itemVariants}
-                whileHover={{ scale: 1.2}}
+                whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring" }}
               >

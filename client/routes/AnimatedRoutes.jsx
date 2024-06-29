@@ -6,7 +6,7 @@ import { AnimatePresence } from "framer-motion";
 
 // Components
 import App from "../src/App";
-import { Discography } from "../src/container";
+import { DiscographyMenu } from "../src/container";
 
 export default function AnimatedRoutes() {
   const location = useLocation();
@@ -15,7 +15,7 @@ export default function AnimatedRoutes() {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<App />} />
-        <Route path="discography" element={<Discography />} />
+        <Route path="discography" element={<DiscographyMenu />} />
       </Routes>
     </AnimatePresence>
   );
