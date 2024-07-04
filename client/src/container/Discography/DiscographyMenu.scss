@@ -1,0 +1,22 @@
+.app__discography-menu {
+  h1 {
+    margin: 5rem auto;
+    text-align: center;
+    font-size: 5em;
+  }
+}
+
+.app__discography-menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .app__discography-menu-album {
+    margin: auto 1rem;
+  }
+
+  .app__discography-menu-album-img {
+    width: 30em;
+    height: 30em;
+  }
+}
