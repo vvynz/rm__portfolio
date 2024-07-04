@@ -14,7 +14,13 @@ export default function DiscographyMenu() {
   return (
     <motion.section>
       <h1>DISCOGRAPHY</h1>
-      <div className="app__discography-menu-wrapper"></div>
+      <div className="app__discography-menu-wrapper">
+        {albums.map((item, index) => (
+          <div key={index}>
+            <img src={urlFor(item.albumImg)} alt={item.albumImg.caption} />
+          </div>
+        ))}
+      </div>
     </motion.section>
   );
 }
