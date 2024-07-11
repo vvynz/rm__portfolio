@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { client, urlFor } from "../../../client";
 
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
+import { images } from "../../constants";
 
 import "./DiscographyMenu.scss";
 
@@ -13,8 +16,12 @@ export default function DiscographyMenu() {
 
     client.fetch(query).then((data) => setAlbums(data));
   }, []);
+
   return (
     <motion.section className="app__discography-menu">
+      <Link className="home-link" to="/">
+        <motion.img src={images.leftArrow} />
+      </Link>
       <h1>DISCOGRAPHY</h1>
       <div className="app__discography-menu-wrapper">
         {albums.map((item, index) => (

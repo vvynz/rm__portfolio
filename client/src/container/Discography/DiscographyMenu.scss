@@ -11,6 +11,14 @@
   flex-direction: row;
   justify-content: center;
 
+  .home-link {
+    img {
+      height: 2rem;
+      width: 2rem;
+      filter: invert(1);
+    }
+  }
+
   .app__discography-menu-album {
     margin: auto 1rem;
   }
