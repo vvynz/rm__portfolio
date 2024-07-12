@@ -11,14 +11,6 @@
   flex-direction: row;
   justify-content: center;
 
-  .home-link {
-    img {
-      height: 2rem;
-      width: 2rem;
-      filter: invert(1);
-    }
-  }
-
   .app__discography-menu-album {
     margin: auto 1rem;
   }
@@ -26,5 +18,17 @@
   .app__discography-menu-album-img {
     width: 30em;
     height: 30em;
+  }
+}
+
+.app__discography-menu-nav {
+  display: flex;
+  justify-content: space-between;
+
+  .home-link {
+    height: 3rem;
+    width: 3rem;
+    filter: invert(92%) sepia(13%) saturate(793%) hue-rotate(187deg)
+      brightness(106%) contrast(94%);
   }
 }

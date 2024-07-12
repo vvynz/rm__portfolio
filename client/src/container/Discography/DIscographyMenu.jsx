@@ -19,10 +19,12 @@ export default function DiscographyMenu() {
 
   return (
     <motion.section className="app__discography-menu">
-      <Link className="home-link" to="/">
-        <motion.img src={images.leftArrow} />
-      </Link>
-      <h1>DISCOGRAPHY</h1>
+      <div className="app__discography-menu-nav">
+        <Link to="/">
+          <motion.img className="home-link" src={images.leftArrow} />
+        </Link>
+        <h1>DISCOGRAPHY</h1>
+      </div>
       <div className="app__discography-menu-wrapper">
         {albums.map((item, index) => (
           <div className="app__discography-menu-album">
