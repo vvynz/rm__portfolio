@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 import { images } from "../../constants";
 
+import Discography from "./Discography";
+
 import "./DiscographyMenu.scss";
 
 export default function DiscographyMenu() {
@@ -17,6 +19,7 @@ export default function DiscographyMenu() {
     client.fetch(query).then((data) => setAlbums(data));
   }, []);
 
+  console.log(albums.map((item, idx) => idx + 1));
   return (
     <motion.section className="app__discography-menu">
       <div className="app__discography-menu-nav">
@@ -28,11 +31,13 @@ export default function DiscographyMenu() {
       <div className="app__discography-menu-wrapper">
         {albums.map((item, index) => (
           <div className="app__discography-menu-album">
-            <img
-              className="app__discography-menu-album-img"
-              src={urlFor(item.albumImg)}
-              alt={item.albumImg.caption}
-            />
+            <Link to={`/discography/${index + 1}`}>
+              <img
+                className="app__discography-menu-album-img"
+                src={urlFor(item.albumImg)}
+                alt={item.albumImg.caption}
+              />
+            </Link>
           </div>
         ))}
       </div>
