@@ -31,12 +31,13 @@ export default function DiscographyMenu() {
       <div className="app__discography-menu-wrapper">
         {albums.map((item, index) => (
           <div className="app__discography-menu-album">
-            <Link to={`/discography/${index + 1}`}>
+            <Link to={`/discography/${item.slug}`}>
               <img
                 className="app__discography-menu-album-img"
                 src={urlFor(item.albumImg)}
                 alt={item.albumImg.caption}
               />
+              {/* <Discography album={item} albumIdx={index} /> */}
             </Link>
           </div>
         ))}

@@ -46,7 +46,7 @@ export default function Discography() {
       </Link>
       <h1>DISCOGRAPHY</h1>
       <div className="app__discography-wrapper">
-        {discography.map((item, index) => (
+        {/* {discography.map((item, index) => (
           <div key={index} className="app__discography-album">
             <h2>{item.title}</h2>
             <img
@@ -61,7 +61,7 @@ export default function Discography() {
               ))}
             </ul>
           </div>
-        ))}
+        ))} */}
       </div>
     </motion.section>
   );
